@@ -1,0 +1,86 @@
+.validatePage {
+  height: calc(100vh - 100px);
+}
+
+
+.validatePage .leftBox {
+  width: 400px;
+  flex-shrink: 0;
+  border-radius: 21px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
+}
+.validatePage .leftBox .welcome {
+  display: flex;
+  width: 200px;
+  height: 80px;
+  padding: 0px 0px 0.001px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-bottom: 15px;
+  margin: auto;
+}
+.validatePage .leftBox  p {
+  width: 200px;
+  color: var(--N1, #353b42);
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.validatePage .rightBox {
+  width: 400px;
+  flex-shrink: 0;
+  border-radius: 21px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
+}
+.validatePage  .rightBox h3 {
+  color: var(--N1, #353b42);
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 35px;
+}
+.validatePage .rightBox p {
+  color: var(--N1, #353b42);
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 275px;
+  margin: auto;
+}
+
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  line-height: 1rem !important;
+}
+
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 10px 14px !important;
+}
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #353B42 !important;
+}
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #353B42 !important;
+    border-width: 1px !important;
+}
+
+.css-f14kt2-MuiFormControl-root-MuiTextField-root .MuiOutlinedInput-root fieldset {
+    border: 1px solid #353B42 !important;
+    border-radius: 6px !important;
+}

@@ -1,0 +1,39 @@
+.Unverified .title {
+  color: var(--N1, #353b42);
+  font-family: Quicksand;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 45px;
+}
+
+.table {
+  border-collapse: collapse;
+}
+.table th {
+  background-color: #e42e35;
+}
+.table tr:nth-child(even) {
+  background-color: #e2e4e7;
+}
+.table tr:nth-child(odd) {
+  background-color: white;
+}
+
+.table th {
+  color: var(--N2, #f5faff);
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 12px;
+  width: calc(100% / 7);
+}
+.table .body {
+  font-size: 14px;
+}
+.table .body tr td {
+  padding: 15px;
+}

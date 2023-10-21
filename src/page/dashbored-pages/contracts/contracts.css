@@ -1,0 +1,18 @@
+.contracts .title {
+  color: var(--N1, #353b42);
+  font-family: Quicksand;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 45px;
+}
+.table .body tr td {
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    text-align: center;
+}
+
+.table th {
+    width: calc(100%/7);
+}

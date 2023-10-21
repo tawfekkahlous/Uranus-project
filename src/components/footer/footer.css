@@ -1,0 +1,15 @@
+.footer {
+  flex-shrink: 0;
+  background-color: #353b42;
+}
+
+.footer  p {
+  color: var(--N2, #f5faff);
+  font-family: Quicksand;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  top:-1px
+}

@@ -1,0 +1,105 @@
+.autocar .title {
+  color: var(--N1, #353b42);
+  font-family: Quicksand;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.autocar button.delete {
+  width: 150px;
+  padding: 5px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  opacity: 0.95;
+  background: #e42e35;
+  box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  color: #f5faff;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.autocar .subtitle {
+  color: var(--N1, #353b42);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+}
+.autocar .edit {
+  color: #0b15ff;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 15px;
+}
+
+.autocar .line {
+  height: 1px;
+  background: #353b42;
+  margin-top: 6px;
+}
+
+.swiperCar .swiper {
+  width: 100% !important;
+  position: relative;
+}
+.swiperCar .swiper .swiper-slide {
+  width: 33% !important;
+  height: 200px !important;
+}
+
+.swiperCar .swiper-button-next {
+  position: absolute !important;
+  right: 10px !important;
+  height: 20px !important;
+  width: 20px !important;
+  height: 10px !important;
+}
+
+.swiperCar div.swiper-button-prev::after {
+  font-size: 20px;
+}
+.swiperCar div.swiper-button-next::after {
+  font-size: 20px;
+}
+
+.autocar .content {
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.autocar .content img {
+  max-width: 70%;
+}
+
+.autocar .media .typeCar {
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.css-1pm0sxe-MuiFormControl-root-MuiTextField-root .MuiOutlinedInput-root {
+  height: 35px !important;
+}
+.css-dww2g-MuiFormControl-root-MuiTextField-root .MuiOutlinedInput-root {
+  height: 35px !important;
+}

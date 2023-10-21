@@ -1,0 +1,166 @@
+.automotives .title {
+  color: var(--N1, #353b42);
+  font-family: Quicksand;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 45px;
+}
+
+.automotives .box {
+  border-radius: 21px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
+}
+
+.automotives .box .logo {
+  width: 68px;
+  height: 24.607px;
+  flex-shrink: 0;
+}
+
+.automotives .box .brand {
+  color: var(--N1, #353b42);
+  font-family: Quicksand;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.automotives .box .add {
+  color: var(--N1, #353b42);
+  font-family: Quicksand;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.automotives .popup {
+  width: 800px;
+  height: 500px;
+  border-radius: 21px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
+}
+
+.automotives .popup .wrapper {
+  width: calc(100% + 20px); /* Adjust as needed */
+  overflow-x: hidden;
+}
+
+.automotives .popup .scroll {
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 20px; /* Adjust as needed */
+  padding-left: 20px;
+  padding-bottom: 50px;
+  padding-top: 25px;
+}
+.scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.popup .search {
+  border-radius: 20px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
+}
+
+.popup .add {
+  border-radius: 61px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 20px;
+}
+.popup .brand {
+  color: var(--N1, #353b42);
+  font-family: Quicksand;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+.popup .line {
+  width: 100%;
+  height: 1px;
+  flex-shrink: 0;
+  margin-top: 27px;
+  background-color: #353b42;
+}
+
+.popup .note {
+  color: var(--P1, #e42e35);
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.popup .box {
+  display: flex;
+  width: 100%;
+  padding: 12px 23px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 21px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
+}
+.popup .box p {
+  color: var(--N1, #353b42);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 15px;
+}
+
+
+.popup .box img{
+  height: 35px;
+}
+.popup .box button {
+  color: #0b15ff;
+  font-family: Quicksand;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.popup .box .addVehicle {
+  color: #353b42;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  opacity: 0.5;
+  margin-left: 10px;
+}
+.css-e0baeo-MuiPaper-root {
+  height: 30px !important;
+}
+.css-i4bv87-MuiSvgIcon-root {
+  width: 20px !important;
+  height: 20px !important;
+}

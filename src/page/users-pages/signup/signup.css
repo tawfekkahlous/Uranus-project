@@ -1,0 +1,73 @@
+.signup-page {
+  height: calc(100vh - 100px);
+}
+
+.signup-page .uranus {
+  width: 400px;
+  border-radius: 21px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
+  height: 415px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+.signup-page .uranus .logo {
+  display: flex;
+  width: 300px;
+  margin: auto;
+  padding: 0px 0px 0.001px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.signup-page .uranus button {
+  width: 250px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px;
+}
+
+.signup-page .uranus .login {
+  background: var(--P1, #e42e35);
+  color: var(--N2, #f5faff);
+}
+
+
+
+.signup-page  .form {
+  flex-shrink: 0;
+  border-radius: 21px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
+}
+
+.signup-page  .form h2 {
+  color: var(--N1, #353B42);
+text-align: center;
+font-family: Quicksand;
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+padding: 12px 14px !important;
+height: 20px !important;
+
+}
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+   border: 2px solid rgba(62, 63, 67, 0.60) !important;
+}

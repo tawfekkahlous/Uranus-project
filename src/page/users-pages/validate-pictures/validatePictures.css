@@ -1,0 +1,98 @@
+.validationPic {
+  height: calc(100vh - 100px);
+}
+
+.validationPic .leftBox {
+  width: 400px;
+  flex-shrink: 0;
+  border-radius: 21px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
+}
+.validationPic .leftBox .logo {
+  display: flex;
+  width: 200px;
+  height: 80px;
+  padding: 0px 0px 0.001px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-bottom: 15px;
+  margin: auto;
+}
+.validationPic .leftBox p {
+  color: var(--N1, #353b42);
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.validationPic .leftBox p span {
+  color: var(--P1, #e42e35);
+}
+.validationPic .rightBox {
+  width: 400px;
+  flex-shrink: 0;
+  border-radius: 21px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
+}
+.validationPic .rightBox .upload {
+  width: 200px;
+  height: 189px;
+  flex-shrink: 0;
+  border-radius: 21px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.validationPic .rightBox .angles {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 21px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.css-190lris-MuiButtonBase-root-MuiButton-root:hover {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    background-color: #e42e35 !important;
+    color: #F5FAFF !important;
+}
+
+.css-g0zme4-MuiButtonBase-root-MuiButton-root:hover {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    background-color: #e42e35 !important;
+    color: #F5FAFF !important;
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+  color: #e42e35 !important;
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+  color: #e42e35 !important;
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
+  width: 25px !important;
+  height: 25px !important;
+}
