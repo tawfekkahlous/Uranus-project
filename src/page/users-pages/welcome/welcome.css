@@ -47,7 +47,7 @@
   width: 100%;
   height: 100%;
 }
-.welcome .left img {
+.left img {
   position: relative;
   background-size: cover;
   top: 15px;
@@ -55,10 +55,14 @@
   height: 431px !important;
 }
 
-.welcome .swiper-pagination-fraction,
-.welcome .swiper-pagination-custom,
-.welcome .swiper-horizontal > .swiper-pagination-bullets,
-.welcome .swiper-pagination-bullets.swiper-pagination-horizontal {
+ .left .swiper-slide {
+    width: 100% !important;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: var(--swiper-pagination-bottom, 8px);
   /* top: var(--swiper-pagination-top, auto); */
   left: 0;
@@ -66,13 +70,9 @@
   bottom: 40px;
   z-index: 9999999;
 }
-.welcome
-  .swiper-horizontal
-  > .swiper-pagination-bullets
-  .swiper-pagination-bullet,
-.welcome
-  .swiper-pagination-horizontal.swiper-pagination-bullets
-  .welcome
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
   width: 10px;
@@ -80,15 +80,15 @@
   z-index: 9999999;
 }
 
-.welcome .swiper-pagination-bullet {
+.swiper-pagination-bullet {
   background-color: #fff;
   z-index: 9999999;
 }
 
-.welcome .swiperr {
+.swiperr {
   position: relative;
 }
-.welcome .swiperr h2 {
+.swiperr h2 {
   position: absolute;
   top: 90px;
   left: 65px;
@@ -99,7 +99,7 @@
   font-weight: 700;
   line-height: normal;
 }
-.welcome .swiperr p {
+ .swiperr p {
   position: absolute;
   bottom: 30px;
   left: 65px;

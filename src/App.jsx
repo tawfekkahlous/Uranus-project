@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import LoginAdmin from "./page/dashbored-pages/login/Login"
 import AddCar from "./page/dashbored-pages/addCar/addCar";
 import Automotives from "./page/dashbored-pages/automotives/automotives";
 import Car from "./page/dashbored-pages/car/car";
@@ -17,7 +18,6 @@ import Name from "./page/users-pages/name/name"
 import Validate from "./page/users-pages/validate/validate"
 import ValidatePictures from "./page/users-pages/validate-pictures/validatePictuers"
 import LoginUser from "./page/users-pages/login/login";
-import LoginAdmin from "./page/dashbored-pages/login/Login"
 function App() {
    const [isLogged, setIsLogged] = useState(false);
 

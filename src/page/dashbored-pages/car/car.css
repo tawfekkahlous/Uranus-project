@@ -48,16 +48,16 @@
   margin-top: 6px;
 }
 
-.swiperCar .swiper {
+ .swiper {
   width: 100% !important;
   position: relative;
 }
-.swiperCar .swiper .swiper-slide {
+ .mySwipe .swiper-slide {
   width: 33% !important;
   height: 200px !important;
 }
 
-.swiperCar .swiper-button-next {
+ .swiper-button-next {
   position: absolute !important;
   right: 10px !important;
   height: 20px !important;
@@ -65,10 +65,10 @@
   height: 10px !important;
 }
 
-.swiperCar div.swiper-button-prev::after {
+div.swiper-button-prev::after {
   font-size: 20px;
 }
-.swiperCar div.swiper-button-next::after {
+ div.swiper-button-next::after {
   font-size: 20px;
 }
 
