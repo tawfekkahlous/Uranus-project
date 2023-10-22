@@ -7,9 +7,7 @@ import * as Yup from "yup";
 // import  { useState } from "react";
 // import Visibility from "@material-ui/icons/Visibility";
 // import VisibilityOff from "@material-ui/icons/VisibilityOff";
-import {  useNavigate } from "react-router-dom";
-
-
+import { useNavigate } from "react-router-dom";
 
 const validationSchema = Yup.object().shape({
   email: Yup.string()
@@ -24,17 +22,16 @@ const validationSchema = Yup.object().shape({
 });
 
 const Signup = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("login");
+  };
 
-  const navigate=useNavigate()
-  const handleClick=() => {
-    navigate("login")
-  }
-
-//  const [showPassword, setShowPassword] =useState(false);
-//    const handleClickShowPassword = () => setShowPassword((show) => !show);
-//     const handleMouseDownPassword = (event) => {
-//       event.preventDefault();
-//     };
+  //  const [showPassword, setShowPassword] =useState(false);
+  //    const handleClickShowPassword = () => setShowPassword((show) => !show);
+  //     const handleMouseDownPassword = (event) => {
+  //       event.preventDefault();
+  //     };
   return (
     <div className="signup-page flex justify-center items-center gap-x-[32px]">
       <div className="uranus py-[40px] ">
@@ -48,9 +45,9 @@ const Signup = () => {
         </div>
       </div>
 
-      <div className="form w-[400px] py-[40px] h-[415px]">
+      <div className="form w-[400px] py-[40px] h-[415px] flex flex-col ">
         <h2> Singup</h2>
-        <div className=" text-center ">
+        <div className=" text-center grow ">
           <Formik
             // validationSchema={validationSchema}
             initialValues={{
@@ -59,161 +56,172 @@ const Signup = () => {
               confirmPassword: "",
             }}
             validationSchema={validationSchema}
-            onSubmit={(values, { resetForm }, { setSubmitting }) => {
+            onSubmit={(values, { resetForm} , setSubmitting ) => {
               console.log({ values });
               resetForm();
               setSubmitting(false);
             }}
           >
             {(formik) => (
-              <Form>
-                <div className=" w-[100%] ">
-                  <Field
-                    as={TextField}
-                    name="email"
-                    id="email"
-                    label="Email or phone "
-                    variant="outlined"
-                    error={formik.errors.email && formik.touched.email}
-                    InputLabelProps={{
-                      style: {
-                        color: "#353B42",
-                        fontSize: "15px",
-                        fontWeight: "700",
-                        opacity: "0.75",
-                      },
-                    }}
-                    sx={{
-                      borderRadius: "10px",
-                      width: "80%",
-                      marginTop: "40px",
-                      "& .MuiOutlinedInput-root": {
-                        "& fieldset": {
-                          border: "2px solid rgba(62, 63, 67, 0.60)",
-                          borderRadius: "12px",
+              <Form className="h-[100%] flex flex-col justify-between">
+                <div className="">
+                  <div className=" w-[100%] ">
+                    <Field
+                      as={TextField}
+                      name="email"
+                      id="email"
+                      label="Email or phone "
+                      variant="outlined"
+                      error={formik.errors.email && formik.touched.email}
+                      InputLabelProps={{
+                        style: {
+                          color: "#353B42",
+                          fontSize: "15px",
+                          fontWeight: "700",
+                          opacity: "0.75",
                         },
-                        "&:hover fieldset": {
-                          border: "2px solid rgba(62, 63, 67, 0.60)",
-                          borderRadius: "12px",
+                      }}
+                      sx={{
+                        borderRadius: "8px",
+                        width: "80%",
+                        marginTop: "25px",
+                        "& .MuiOutlinedInput-root": {
+                          "& fieldset": {
+                            border: "2px solid rgba(62, 63, 67, 0.60)",
+                            borderRadius: "12px",
+                          },
+                          "&:hover fieldset": {
+                            border: "2px solid rgba(62, 63, 67, 0.60)",
+                            borderRadius: "12px",
+                          },
+                          "&.Mui-focused fieldset": {
+                            border: "2px solid rgba(62, 63, 67, 0.60)",
+                            borderRadius: "12px",
+                          },
                         },
-                        "&.Mui-focused fieldset": {
-                          border: "2px solid rgba(62, 63, 67, 0.60)",
-                          borderRadius: "12px",
+                      }}
+                    />
+                    <ErrorMessage name="email">
+                      {(msg) => (
+                        <p className=" text-[14px] text-[red]">{msg}</p>
+                      )}
+                    </ErrorMessage>
+                  </div>
+                  <div className="w-[100%]">
+                    <Field
+                      as={TextField}
+                      name="password"
+                      id="password"
+                      label="Password"
+                      variant="outlined"
+                      type="password"
+                      error={formik.errors.password && formik.touched.password}
+                      InputLabelProps={{
+                        style: {
+                          color: "#353B42",
+                          fontSize: "15px",
+                          fontWeight: "700",
+                          opacity: "0.75",
                         },
-                      },
-                    }}
-                  />
-                  <ErrorMessage name="email">
-                    {(msg) => <p className=" text-[14px]">{msg}</p>}
-                  </ErrorMessage>
-                </div>
-                <div className="w-[100%]">
-                  <Field
-                    as={TextField}
-                    name="password"
-                    id="password"
-                    label="Password"
-                    variant="outlined"
-                    type="password"
-                    error={formik.errors.email && formik.touched.email}
-                    InputLabelProps={{
-                      style: {
-                        color: "#353B42",
-                        fontSize: "15px",
-                        fontWeight: "700",
-                        opacity: "0.75",
-                      },
-                    }}
-                    sx={{
-                      borderRadius: "12px",
-                      height: "100%",
-                      marginTop: "20px",
-                      width: "80%",
-                      "& .MuiOutlinedInput-root": {
-                        "& fieldset": {
-                          border: "2px solid rgba(62, 63, 67, 0.60)",
-                          borderRadius: "12px",
+                      }}
+                      sx={{
+                        borderRadius: "8px",
+                        height: "100%",
+                        marginTop: "15px",
+                        width: "80%",
+                        "& .MuiOutlinedInput-root": {
+                          "& fieldset": {
+                            border: "2px solid rgba(62, 63, 67, 0.60)",
+                            borderRadius: "12px",
+                          },
+                          "&:hover fieldset": {
+                            border: "2px solid rgba(62, 63, 67, 0.60)",
+                            borderRadius: "12px",
+                          },
+                          "&.Mui-focused fieldset": {
+                            border: "2px solid rgba(62, 63, 67, 0.60)",
+                            borderRadius: "12px",
+                          },
                         },
-                        "&:hover fieldset": {
-                          border: "2px solid rgba(62, 63, 67, 0.60)",
-                          borderRadius: "12px",
-                        },
-                        "&.Mui-focused fieldset": {
-                          border: "2px solid rgba(62, 63, 67, 0.60)",
-                          borderRadius: "12px",
-                        },
-                      },
-                    }}
-                  />
-                  <ErrorMessage name="password">
-                    {(msg) => <p className=" text-[14px]">{msg}</p>}
-                  </ErrorMessage>
-                </div>
+                      }}
+                    />
+                    <ErrorMessage name="password">
+                      {(msg) => (
+                        <p className=" text-[14px] text-[red]">{msg}</p>
+                      )}
+                    </ErrorMessage>
+                  </div>
 
-                <div className="w-[100$] ">
-                  <Field
-                    as={TextField}
-                    type="password"
-                    name="confirmPassword"
-                    id="confirmPassword"
-                    label="Re-type Password"
-                    variant="outlined"
-                    error={formik.errors.email && formik.touched.email}
-                    InputLabelProps={{
-                      style: {
-                        color: "#353B42",
-                        fontSize: "15px",
-                        fontWeight: "700",
-                        opacity: "0.75",
-                      },
-                    }}
-                    sx={{
-                      borderRadius: "12px",
-                      height: "100%",
-                      marginTop: "20px",
-                      width: "80%",
-                      "& .MuiOutlinedInput-root": {
-                        "& fieldset": {
-                          border: "2px solid rgba(62, 63, 67, 0.60)",
-                          borderRadius: "12px",
+                  <div className="w-[100$] ">
+                    <Field
+                      as={TextField}
+                      type="password"
+                      name="confirmPassword"
+                      id="confirmPassword"
+                      label="Re-type Password"
+                      variant="outlined"
+                      error={
+                        formik.errors.confirmPassword &&
+                        formik.touched.confirmPassword
+                      }
+                      InputLabelProps={{
+                        style: {
+                          color: "#353B42",
+                          fontSize: "15px",
+                          fontWeight: "700",
+                          opacity: "0.75",
                         },
-                        "&:hover fieldset": {
-                          border: "2px solid rgba(62, 63, 67, 0.60)",
-                          borderRadius: "12px",
+                      }}
+                      sx={{
+                        borderRadius: "8px",
+                        height: "100%",
+                        marginTop: "15px",
+                        width: "80%",
+                        "& .MuiOutlinedInput-root": {
+                          "& fieldset": {
+                            border: "2px solid rgba(62, 63, 67, 0.60)",
+                            borderRadius: "12px",
+                          },
+                          "&:hover fieldset": {
+                            border: "2px solid rgba(62, 63, 67, 0.60)",
+                            borderRadius: "12px",
+                          },
+                          "&.Mui-focused fieldset": {
+                            border: "2px solid rgba(62, 63, 67, 0.60)",
+                            borderRadius: "12px",
+                          },
                         },
-                        "&.Mui-focused fieldset": {
-                          border: "2px solid rgba(62, 63, 67, 0.60)",
-                          borderRadius: "12px",
-                        },
-                      },
-                    }}
-                  />
-                  <ErrorMessage name="confirmPassword">
-                    {(msg) => <p className=" text-[14px]">{msg}</p>}
-                  </ErrorMessage>
+                      }}
+                    />
+                    <ErrorMessage name="confirmPassword">
+                      {(msg) => (
+                        <p className=" text-[14px] text-[red]">{msg}</p>
+                      )}
+                    </ErrorMessage>
+                  </div>
                 </div>
                 <Link to="name">
-                  <Button
-                    variant="contained"
-                    type="submit"
-                    color="error"
-                    sx={{
-                      borderRadius: "12px",
-                      width: "250px",
-                      boxShadow: "0px 4px 31px 0px rgba(0, 0, 0, 0.25)",
-                      background: "var(--P1, #E42E35)",
-                      color: "#F5FAFF",
-                      fontSize: "15px",
-                      fonrWeight: "700",
-                      fontFamily: "Quicksand",
-                      padding: "10px",
-                      marginTop: "40px",
-                      lineHeight: "normal",
-                    }}
-                    disabled={!formik.isValid || !formik.dirty}
-                  >
-                    Signup
-                  </Button>
+                <Button
+                  variant="contained"
+                  type="submit"
+                  color="error"
+                  sx={{
+                    borderRadius: "12px",
+                    width: "250px",
+                    boxShadow: "0px 4px 31px 0px rgba(0, 0, 0, 0.25)",
+                    background: "var(--P1, #E42E35)",
+                    color: "#F5FAFF",
+                    fontSize: "15px",
+                    fonrWeight: "700",
+                    fontFamily: "Quicksand",
+                    padding: "10px",
+                    // marginTop: "83px",
+                    lineHeight: "normal",
+                  }}
+                  disabled={!formik.isValid || !formik.dirty}
+                >
+                  Signup
+                </Button>
                 </Link>
               </Form>
             )}

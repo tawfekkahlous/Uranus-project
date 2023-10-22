@@ -1,14 +1,14 @@
 // import Swiper React components;
 import { Swiper, SwiperSlide } from "swiper/react";
-import welcomeLogo from "../../../assets/welcome-Logo.png";
-import rectangle from "../../..//assets/Rectangle 1452 (1).png";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import "./welcome.css";
 import { Autoplay, Navigation } from "swiper/modules";
+import welcomeLogo from "../../../assets/welcome-Logo.png";
+import rectangle from "../../..//assets/Rectangle 1452 (1).png";
 import { Link } from "react-router-dom";
- const Welcome = () => {
+import "./welcome.css";
+const Welcome = () => {
   return (
     <div className="welcome flex justify-center items-center gap-[32px]">
       <div className="uranus py-[60px]">

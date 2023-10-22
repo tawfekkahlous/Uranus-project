@@ -1,4 +1,4 @@
-import headerLogo from "../../assets/header-logo.svg"
+import headerLogo from "../../assets/Logo.png"
 import "./header.css"
 import star from "../../assets/star.svg"
 import search from "../../assets/search.svg"
