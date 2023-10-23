@@ -1,0 +1,61 @@
+/* .side-car .swiper {
+  width: 100%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+.side-car .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+}
+
+.side-car .swiper-slide img {
+  display: block;
+  width: 80% !important;
+  height: 80% !important;
+  object-fit: cover;
+}
+
+
+.side-car .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.side-car .mySwiper2 {
+  height: 70%;
+  width: 100%;
+  border-radius: 24px;
+  background: var(--N2, #f5faff);
+  /* box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.15); */
+}
+
+.side-car .mySwiper {
+  height: 25%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.side-car .mySwiper .swiper-slide {
+  width: 30% ;
+  height: 100%;
+  opacity: 0.9 ;
+  border-radius: 24px;
+  background: var(--N2, #f5faff);
+  /* box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.15); */
+}
+
+.side-car .mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+
+.side-car .swiper-free-mode > .swiper-wrapper {
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}

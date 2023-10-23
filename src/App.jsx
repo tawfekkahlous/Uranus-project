@@ -19,8 +19,9 @@ import Validate from "./page/users-pages/validate/validate"
 import ValidatePictures from "./page/users-pages/validate-pictures/validatePictuers"
 import LoginUser from "./page/users-pages/login/login";
 import Home from "./page/users-pages/home/home";
+import UserCar from "./page/users-pages/car/car"
 function App() {
-   const [isLogged, setIsLogged] = useState(false);
+   const [isLogged, setIsLogged] = useState(true);
 
    return isLogged ? (
      <BrowserRouter>
@@ -45,6 +46,7 @@ function App() {
            <Route path="/" element={<Welcome />} />
            <Route path="login" element={<LoginUser />} />
            <Route path="login/home" element={<Home />} />
+           <Route path="login/car" element={<UserCar />} />
            <Route path="signup" element={<Signup />} />
            <Route path="signup/name" element={<Name />} />
            <Route path="signup/name/validate" element={<Validate />} />
