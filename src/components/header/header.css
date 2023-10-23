@@ -22,9 +22,9 @@
   line-height: normal;
 }
 .header ul li:hover {
-  color: var(--P1, #e42e35);
+  color:  #e42e35;
   transition: 0.3s;
 }
-.header ul li.active {
-  color: var(--P1, #e42e35);
+.header ul .active {
+  color:  #e42e35;
 }

@@ -16,13 +16,13 @@ const Header = () => {
           <p className="title"> URANUS RENT A CAR L.L.C</p>
         </div>
         <ul className="flex gap-x-[60px]  ">
-          <NavLink to="home">
-            <li className="active"> Home </li>
+          <NavLink to="login/home">
+            <li> Home </li>
           </NavLink>
-          <NavLink to="cars">
+          <NavLink to="login/cars">
             <li> Cars </li>
           </NavLink>
-          <NavLink to="profile">
+          <NavLink to="login/profile">
             <li> Profile </li>
           </NavLink>
         </ul>

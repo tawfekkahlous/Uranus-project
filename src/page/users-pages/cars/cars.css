@@ -1,0 +1,79 @@
+.cars .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #1976d2;
+}
+
+.cars
+  .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select {
+  height: 20px;
+}
+.cars .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: #353b42;
+  font-weight: 600;
+  font-size: 14px;
+}
+.cars .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
+  font-size: 30px;
+  right: 2px;
+}
+
+ hr {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    #353b42;
+}
+ .popular {
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.10);
+  background: var(--N2, #f5faff);
+  border-radius: 24px;
+  margin-bottom: 25px;
+}
+
+.popular .info {
+  opacity: 0.6;
+  background: var(
+    --N1,
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    #353b42
+  );
+  display: flex;
+  height: 100%;
+  padding: 17px 6px;
+  flex-direction: column;
+  align-items: center;
+  gap: 33px;
+  flex-shrink: 0;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  position: relative;
+  top:-25px;
+  z-index: 2;
+
+}
+
+ .popular button.price {
+  border-radius: 12px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.15);
+  color: #e42e35;
+  font-size: 14px;
+  padding: 5px 15px;
+  font-weight: 700;
+}
+.popular button.type {
+  border-radius: 12px;
+  background: var(--N2, #f5faff);
+  box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  padding: 5px 15px;
+  color: #000;
+  font-weight: 700;
+}
+
