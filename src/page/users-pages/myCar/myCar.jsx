@@ -1,89 +1,16 @@
-import { Box, FormControl, InputLabel, MenuItem, Select } from "@mui/material";
-import "./cars.css";
-import React from "react";
-import chevDark from "../../../assets/chev-dark.svg"
-import path from "../../../assets/path.svg"
-import chevrolet from "../../../assets/Chevrolet-Camaro-398x206 1.svg"
-// import { Link } from "react-router-dom";
-const Cars = () => {
-  const [age, setAge] = React.useState("");
-   const [price, setPrice] = React.useState("");
-    const [brand, setBrand] = React.useState("");
-
-
-  const handleChangeAge = (event) => {
-    setAge(event.target.value);
-    console.log(age);
-  };
-   const handleChangePrice = (event) => {
-     setPrice(event.target.value);
-     console.log(price);
-   };
-    const handleChangeBrand = (event) => {
-      setBrand(event.target.value);
-      console.log(brand);
-    };
+import chevDark from "../../../assets/chev-dark.svg";
+import path from "../../../assets/path.svg";
+import chevrolet from "../../../assets/Chevrolet-Camaro-398x206 1.svg";
+import "./myCar.css"
+const MyCar = () => {
   return (
-    <div className=" cars py-[50px]">
+    <div className=" myCars py-[50px]">
       <div className="container mx-auto px-[40px]">
-        <h2 className=" text-[#E42E35] font-[700] text-[25px] font-[Quicksand] mb-[60px] ">
-          Our Garage
+        <h2 className=" text-[#E42E35] font-[700] text-[25px] font-[Quicksand] mb-[80px] ">
+          My Cars
         </h2>
-        <p className="text-[#353B42] font-[700] text-[20px] mb-[30px]">
-          Our cars
-        </p>
-        <div className="flex  gap-[40px]">
-          <Box sx={{ minWidth: 140 ,borderRadius:"20px"}}>
-            <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">Age</InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                value={age}
-                label="Age"
-                onChange={handleChangeAge}
-              >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
-            </FormControl>
-          </Box>
-          <Box sx={{ minWidth: 140 }}>
-            <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">Price</InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                value={price}
-                label="prive"
-                onChange={handleChangePrice}
-              >
-                <MenuItem value={10}>250</MenuItem>
-                <MenuItem value={20}>450</MenuItem>
-                <MenuItem value={30}>650</MenuItem>
-              </Select>
-            </FormControl>
-          </Box>
-          <Box sx={{ minWidth: 140 }}>
-            <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">Brand</InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                value={brand}
-                label="Brand"
-                onChange={handleChangeBrand}
-              >
-                <MenuItem value={10}>Chevrolet</MenuItem>
-                <MenuItem value={20}>Mazda</MenuItem>
-                <MenuItem value={30}>Kia</MenuItem>
-              </Select>
-            </FormControl>
-          </Box>
-        </div>
-        <hr className="mt-[30px] h-[2px] mb-[50px]" />
-
+        <p className="font-[700] text-[#353B42]">Current</p>
+        <hr className="mt-[15px] h-[2px] mb-[50px]" />
         <div className="grid grid-cols-12 gap-[20px] ">
           <div className="lg:w-[450px] lg:h-[350px] xl:w-[500px] popular flex ml-[30px]  col-span-12  lg:col-span-6">
             <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
@@ -131,6 +58,11 @@ const Cars = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <p className="font-[700] text-[#353B42] mt-[50px]">All Cars</p>
+        <hr className="mt-[15px] h-[2px] mb-[50px]" />
+        <div className="grid grid-cols-12 gap-[20px] ">
           <div className="lg:w-[450px] lg:h-[350px] xl:w-[500px] popular flex ml-[30px]  col-span-12  lg:col-span-6">
             <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
               <img src={chevDark} alt="chevrolet-logo" />
@@ -229,4 +161,4 @@ const Cars = () => {
   );
 };
 
-export default Cars;
+export default MyCar;

@@ -1,22 +1,23 @@
-import "./car.css";
+import "./carInfo.css";
 import chevroletLogo from "../../../assets/chevLogo.svg";
 import chevrolet from "../../../assets/Chevrolet-Camaro-398x206 1.svg"
-import star from "../../../assets/star.svg";
 import frontSide from "../../../assets/2019-chevrolet-camaro-1lt-coupe-front-view.svg"
 import backSide from "../../../assets/2019-chevrolet-camaro-1lt-coupe-rear-view.svg"
-import angularSide from "../../../assets/2019-chevrolet-camaro-1lt-coupe-angular-rear.svg"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
+import angularSide from "../../../assets/2019-chevrolet-camaro-1lt-coupe-angular-rear.svg"
+import star from "../../../assets/star.svg";
 
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
-const UserCar = () => {
-     const [thumbsSwiper, setThumbsSwiper] = useState("");
+const CarInfo = () => {
+    //  const [thumbsSwiper, setThumbsSwiper] = useState("");
   return (
     <div className="  py-[50px]">
       <div className="container mx-auto px-[40px]">
@@ -136,10 +137,14 @@ const UserCar = () => {
             </div>
           </div>
         </div>
-        <button className="bg-[#E42E35] text-[#F5FAFF] py-[8px] px-[80px] rounded-[15px] font-[700] ml-[30px]">Rent</button>
+        <Link to="rent-proccess-confirmation">
+          <button className="bg-[#E42E35] text-[#F5FAFF] py-[8px] px-[80px] rounded-[15px] font-[700] ml-[30px] relative top-[-30px]">
+            Rent
+          </button>
+        </Link>
       </div>
     </div>
   );
 };
 
-export default UserCar;
+export default CarInfo;

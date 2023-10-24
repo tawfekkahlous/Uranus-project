@@ -1,162 +1,134 @@
-import chevDark from "../../../assets/chev-dark.svg";
-import path from "../../../assets/path.svg";
-import chevrolet from "../../../assets/Chevrolet-Camaro-398x206 1.svg";
+import "./profile.css";
+import star from "../../../assets/star.svg";
+import contact from "../../../assets/contact.svg";
+import car from "../../../assets/car.svg";
+import note from "../../../assets/note.svg";
+import pen from "../../../assets/pen.svg";
+import flag from "../../../assets/flag.svg";
+import { Link } from "react-router-dom";
+
 const Profile = () => {
   return (
-    <div className=" cars py-[50px]">
-      <div className="container mx-auto px-[40px]">
-        <h2 className=" text-[#E42E35] font-[700] text-[25px] font-[Quicksand] mb-[80px] ">
-          My Cars
-        </h2>
-        <p className="font-[700] text-[#353B42]">Current</p>
-        <hr className="mt-[30px] h-[2px] mb-[50px]" />
-        <div className="grid grid-cols-12 gap-[20px] ">
-          <div className="lg:w-[450px] lg:h-[350px] xl:w-[500px] popular flex ml-[30px]  col-span-12  lg:col-span-6">
-            <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
-              <img src={chevDark} alt="chevrolet-logo" />
-              <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-              <img src={path} alt="path" />
-              <p className="text-white">2021</p>
-              <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
-                <li>Four engine options</li>
-                <li>The 1LE track package is available on all trims</li>
-              </ul>
-            </div>
-            <div className=" flex flex-col justify-between">
-              <img
-                src={chevrolet}
-                alt="chevrolet"
-                className="w-[300px] relative left-[-50px] z-[1] mt-[60px]"
-              />
-              <div className="mb-[25px] flex justify-around">
-                <button className="price">550/daily</button>
-                <button className="type">Camaro</button>
-              </div>
-            </div>
-          </div>
-          <div className="lg:w-[450px] lg:h-[350px] xl:w-[500px] popular flex ml-[30px]  col-span-12  lg:col-span-6">
-            <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
-              <img src={chevDark} alt="chevrolet-logo" />
-              <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-              <img src={path} alt="path" />
-              <p className="text-white">2021</p>
-              <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
-                <li>Four engine options</li>
-                <li>The 1LE track package is available on all trims</li>
-              </ul>
-            </div>
-            <div className=" flex flex-col justify-between">
-              <img
-                src={chevrolet}
-                alt="chevrolet"
-                className="w-[300px] relative left-[-50px] z-[1] mt-[60px]"
-              />
-              <div className="mb-[25px] flex justify-around">
-                <button className="price">550/daily</button>
-                <button className="type">Camaro</button>
-              </div>
-            </div>
-          </div>
-        </div>
+    <>
+      <div className="account  py-[50px]">
+        <div className="container mx-auto px-[40px]">
+          <h2 className=" text-[#E42E35] font-[700] text-[20px] font-[Quicksand] mb-[50px] ">
+            Your Account
+          </h2>
 
-        <p className="font-[700] text-[#353B42] mt-[50px]">All Cars</p>
-        <hr className="mt-[30px] h-[2px] mb-[50px]" />
-        <div className="grid grid-cols-12 gap-[20px] ">
-          <div className="lg:w-[450px] lg:h-[350px] xl:w-[500px] popular flex ml-[30px]  col-span-12  lg:col-span-6">
-            <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
-              <img src={chevDark} alt="chevrolet-logo" />
-              <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-              <img src={path} alt="path" />
-              <p className="text-white">2021</p>
-              <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
-                <li>Four engine options</li>
-                <li>The 1LE track package is available on all trims</li>
-              </ul>
-            </div>
-            <div className=" flex flex-col justify-between">
-              <img
-                src={chevrolet}
-                alt="chevrolet"
-                className="w-[300px] relative left-[-50px] z-[1] mt-[60px]"
-              />
-              <div className="mb-[25px] flex justify-around">
-                <button className="price">550/daily</button>
-                <button className="type">Camaro</button>
+          <div className=" flex  flex-col gap-y-[50px] justify-between sm:flex-row sm:justify-between ">
+            <div className="flex flex-col gap-y-[30px] sm:w-[45%] lg:w-[40%] w-[90%]  ">
+              <div className="points  p-[20px] w-[100%] ">
+                <div className="flex gap-[15px] items-center justify-center mb-[15px]">
+                  <p className="  text-[#353B42] text-[18px] font-[700] ">
+                    My Points
+                  </p>
+                  <img src={star} alt="star" className="w-[20px] " />
+                </div>
+
+                <p className="text-[#353B42] font-[600] text-[15px] mb-[15px] ml-[15px]">
+                  the more you count, the best you get
+                </p>
+
+                <div className="">
+                  <div className="flex justify-between items-center mx-[60px] ">
+                    <p className="font-[700] text-[14px] text-[#353B42]">
+                      {" "}
+                      {"2500"}{" "}
+                    </p>
+                    <p className="font-[700] text-[14px] text-[#353B42]">
+                      {" "}
+                      {"5000"}{" "}
+                    </p>
+                  </div>
+                  <div className="bar mt-[7px]  mx-[auto]"> </div>
+                </div>
+              </div>
+
+              <Link to="my-car">
+              <div className="my-cars flex items-center gap-[10px] w-[100%] px-[20px] py-[10px]">
+                <img src={car} alt="car" className="w-[20px]" />
+                <p className="font-[700] text-[#353B42]">My Cars</p>
+              </div>
+              </Link>
+              <div className="my-cars flex items-center gap-[10px] w-[100%] px-[20px] py-[10px]">
+                <img src={contact} alt="contact" className="w-[20px]" />
+                <p className="font-[700] text-[#353B42]">Contact us</p>
+              </div>
+              <div className="my-cars flex items-center gap-[10px] w-[100%]  px-[20px] py-[10px]">
+                <img
+                  src={note}
+                  alt="note"
+                  className="w-[20px] text-[#E42E35]"
+                />
+                <p className="font-[700] text-[#E42E35]">Report Problem</p>
               </div>
             </div>
-          </div>
-          <div className="lg:w-[450px] lg:h-[350px] xl:w-[500px] popular flex ml-[30px]  col-span-12  lg:col-span-6">
-            <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
-              <img src={chevDark} alt="chevrolet-logo" />
-              <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-              <img src={path} alt="path" />
-              <p className="text-white">2021</p>
-              <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
-                <li>Four engine options</li>
-                <li>The 1LE track package is available on all trims</li>
-              </ul>
-            </div>
-            <div className=" flex flex-col justify-between">
-              <img
-                src={chevrolet}
-                alt="chevrolet"
-                className="w-[300px] relative left-[-50px] z-[1] mt-[60px]"
-              />
-              <div className="mb-[25px] flex justify-around">
-                <button className="price">550/daily</button>
-                <button className="type">Camaro</button>
+
+            <div className="info  sm:w-[45%] lg:w-[40%] w-[90%]">
+              <div className=" flex justify-between items-center mb-[40px]">
+                <p className="text-[#353B42] font-[600] text-[20px]">
+                  John Smith
+                </p>
+                <img src={pen} alt="pen" className="w-[50px]" />
               </div>
-            </div>
-          </div>
-          <div className="lg:w-[450px] lg:h-[350px] xl:w-[500px] popular flex ml-[30px]  col-span-12  lg:col-span-6">
-            <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
-              <img src={chevDark} alt="chevrolet-logo" />
-              <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-              <img src={path} alt="path" />
-              <p className="text-white">2021</p>
-              <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
-                <li>Four engine options</li>
-                <li>The 1LE track package is available on all trims</li>
-              </ul>
-            </div>
-            <div className=" flex flex-col justify-between">
-              <img
-                src={chevrolet}
-                alt="chevrolet"
-                className="w-[300px] relative left-[-50px] z-[1] mt-[60px]"
-              />
-              <div className="mb-[25px] flex justify-around">
-                <button className="price">550/daily</button>
-                <button className="type">Camaro</button>
+
+              <div className="mb-[15px]">
+                <p className="text-[#353B42] font-[600] text-[18px] mb-[10px] ">
+                  User Name
+                </p>
+                <p className="text-[17px] text-[#353B42] font-[300] ">
+                  john_smith_99
+                </p>
               </div>
-            </div>
-          </div>
-          <div className="lg:w-[450px] lg:h-[350px] xl:w-[500px] popular flex ml-[30px]  col-span-12  lg:col-span-6">
-            <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
-              <img src={chevDark} alt="chevrolet-logo" />
-              <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-              <img src={path} alt="path" />
-              <p className="text-white">2021</p>
-              <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
-                <li>Four engine options</li>
-                <li>The 1LE track package is available on all trims</li>
-              </ul>
-            </div>
-            <div className=" flex flex-col justify-between">
-              <img
-                src={chevrolet}
-                alt="chevrolet"
-                className="w-[300px] relative left-[-50px] z-[1] mt-[60px]"
-              />
-              <div className="mb-[25px] flex justify-around">
-                <button className="price">550/daily</button>
-                <button className="type">Camaro</button>
+              <div className="mb-[15px]">
+                <p className="text-[#353B42] font-[600] text-[18px] mb-[10px] ">
+                  Email
+                </p>
+                <p className="text-[17px] text-[#353B42] font-[300] ">
+                  john22smith@gmail.com
+                </p>
+              </div>
+              <div className="mb-[15px]">
+                <p className="text-[#353B42] font-[600] text-[18px] mb-[10px] ">
+                  Number
+                </p>
+                <div className=" flex gap-[8px] items-center">
+                  <img src={flag} alt="flag" className="w-[20px]" />
+                  <p className="text-[17px] text-[#353B42] font-[300] ">
+                    +971 50 293 7412
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <style>
+        {`
+            .bar{
+              position : relative;
+              width: 90%;
+              height: 10px;
+              flex-shrink: 0;
+              border-radius: 37px;
+              background: #9BA5B7;
+              overflow : hidden;
+            }
+            .bar:after{
+              position : absolute;
+              left :0;
+              top: 0;
+              content : "";
+              height : 100%;
+              width: ${(2500 * 100) / 5000}%;
+              border-radius: 37px;  
+              background : #e42e35;
+            }
+          `}
+      </style>
+    </>
   );
 };
 

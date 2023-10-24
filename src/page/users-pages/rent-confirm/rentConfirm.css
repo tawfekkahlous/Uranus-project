@@ -1,0 +1,60 @@
+.comfirm .css-4jnixx-MuiStack-root>.MuiTextField-root {
+    width: 150px !important;
+}
+
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 9.5px 14px !important;
+}
+
+.comfirm .line {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #353B42;
+}
+
+
+.comfirm.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+}
+
+.comfirm.swiper-slide img {
+  display: block;
+  width: 80% !important;
+  height: 80% !important;
+  object-fit: cover;
+}
+
+
+.comfirm.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.comfirm.mySwiper2 {
+  height: 70%;
+  width: 100%;
+  border-radius: 24px;
+  background: var(--N2, #f5faff);
+  /* box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.15); */
+}
+
+.comfirm.mySwiper {
+  height: 25%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.comfirm.mySwiper .swiper-slide {
+  width: 30% ;
+  height: 100%;
+  opacity: 0.9 ;
+  border-radius: 24px;
+  background: var(--N2, #f5faff);
+  /* box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.15); */
+}
+
+.comfirm.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}

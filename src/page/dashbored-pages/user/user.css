@@ -40,7 +40,7 @@ button.verify {
   line-height: normal;
 }
 
-.info {
+.user .info {
   flex-shrink: 0;
   border-radius: 12px;
   opacity: 0.95;
@@ -49,7 +49,7 @@ button.verify {
   backdrop-filter: blur(2px);
   margin-top: 25px;
 }
-.info .name {
+.user .info .name {
   color: var(--N1, #353b42);
   font-family: Quicksand;
   font-size: 25px;
@@ -57,7 +57,7 @@ button.verify {
   font-weight: 300;
   line-height: normal;
 }
-.info .number {
+.user .info .number {
   color: var(--N1, #353b42);
   font-family: Quicksand;
   font-size: 25px;
@@ -65,7 +65,7 @@ button.verify {
   font-weight: 300;
   line-height: normal;
 }
-.info .email {
+.user .info .email {
   color: var(--N1, #353b42);
   font-family: Quicksand;
   font-size: 25px;
@@ -74,7 +74,7 @@ button.verify {
   line-height: normal;
 }
 
-.points {
+.user .points {
   border-radius: 12px;
   opacity: 0.95;
   background: var(--N2, #f5faff);
@@ -83,7 +83,7 @@ button.verify {
   flex-shrink: 0;
 }
 
-.points p {
+.user .points p {
   color: var(--N1, #353b42);
   font-family: Quicksand;
   font-size: 25px;
@@ -92,13 +92,13 @@ button.verify {
   line-height: normal;
 }
 
-.points .point p {
+.user .points .point p {
   font-size: 18px;
   font-weight: 700;
   color: #353b42;
 }
 
-.car {
+.user .car {
   border-radius: 12px;
   opacity: 0.95;
   background: var(--N2, #f5faff);
@@ -114,7 +114,7 @@ button.verify {
   padding-bottom: 10px;
 }
 
-.car p {
+.user .car p {
   color: var(--N1, #353b42);
   font-family: Quicksand;
   font-size: 25px;
@@ -122,7 +122,7 @@ button.verify {
   font-weight: 700;
   line-height: normal;
 }
-.empty {
+.user .empty {
   height: 55px;
   flex-shrink: 0;
   border-radius: 12px;
@@ -132,7 +132,7 @@ button.verify {
   backdrop-filter: blur(2px);
 }
 
-.pictures .one {
+.user .pictures .one {
   border-radius: 12px;
   opacity: 0.95;
   background: var(--N2, #f5faff);
