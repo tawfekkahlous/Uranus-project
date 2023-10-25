@@ -63,3 +63,17 @@
   font-weight: 700;
   line-height: normal;
 }
+
+
+
+.payment .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+    color: #E42E35;
+}
+.payment .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+ background-color: #E42E35 ;
+}
+
+
+.payment .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 20px 16px !important;
+}
