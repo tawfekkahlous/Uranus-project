@@ -1,5 +1,5 @@
 import chevDark from "../../../assets/chev-dark.svg";
-import path from "../../../assets/path.svg";
+import seat from "../../../assets/seats.svg"
 import chevrolet from "../../../assets/Chevrolet-Camaro-398x206 1.svg";
 import "./myCar.css"
 const MyCar = () => {
@@ -16,7 +16,10 @@ const MyCar = () => {
             <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
               <img src={chevDark} alt="chevrolet-logo" />
               <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-              <img src={path} alt="path" />
+              <div className="text-center">
+                <img src={seat} alt="seat" />
+                <p className="text-[#F5FAFF] font-[700]">4</p>
+              </div>
               <p className="text-white">2021</p>
               <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
                 <li>Four engine options</li>
@@ -39,7 +42,10 @@ const MyCar = () => {
             <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
               <img src={chevDark} alt="chevrolet-logo" />
               <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-              <img src={path} alt="path" />
+              <div className="text-center">
+                <img src={seat} alt="seat" />
+                <p className="text-[#F5FAFF] font-[700]">4</p>
+              </div>
               <p className="text-white">2021</p>
               <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
                 <li>Four engine options</li>
@@ -67,7 +73,10 @@ const MyCar = () => {
             <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
               <img src={chevDark} alt="chevrolet-logo" />
               <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-              <img src={path} alt="path" />
+              <div className="text-center">
+                <img src={seat} alt="seat" />
+                <p className="text-[#F5FAFF] font-[700]">4</p>
+              </div>
               <p className="text-white">2021</p>
               <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
                 <li>Four engine options</li>
@@ -90,7 +99,10 @@ const MyCar = () => {
             <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
               <img src={chevDark} alt="chevrolet-logo" />
               <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-              <img src={path} alt="path" />
+              <div className="text-center">
+                <img src={seat} alt="seat" />
+                <p className="text-[#F5FAFF] font-[700]">4</p>
+              </div>
               <p className="text-white">2021</p>
               <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
                 <li>Four engine options</li>
@@ -113,7 +125,10 @@ const MyCar = () => {
             <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
               <img src={chevDark} alt="chevrolet-logo" />
               <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-              <img src={path} alt="path" />
+              <div className="text-center">
+                <img src={seat} alt="seat" />
+                <p className="text-[#F5FAFF] font-[700]">4</p>
+              </div>
               <p className="text-white">2021</p>
               <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
                 <li>Four engine options</li>
@@ -136,7 +151,10 @@ const MyCar = () => {
             <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
               <img src={chevDark} alt="chevrolet-logo" />
               <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-              <img src={path} alt="path" />
+              <div className="text-center">
+                <img src={seat} alt="seat" />
+                <p className="text-[#F5FAFF] font-[700]">4</p>
+              </div>
               <p className="text-white">2021</p>
               <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
                 <li>Four engine options</li>

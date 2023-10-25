@@ -5,8 +5,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import chevrolet from "../../../assets/Chevrolet-Camaro-398x206 1.svg";
 import chevDark from "../../../assets/chev-dark.svg";
-import path from "../../../assets/path.svg";
-import "./home.css"
+import "./home.css";
+import seat from "../../../assets/seats.svg";
 
 const Home = () => {
   return (
@@ -37,7 +37,10 @@ const Home = () => {
                   <div className="info">
                     <img src={chevDark} alt="chevrolet-logo" />
                     <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-                    <img src={path} alt="path" />
+                    <div className="text-center">
+                      <img src={seat} alt="seat" />
+                      <p className="text-[#F5FAFF] font-[700]">4</p>
+                    </div>
                     <p className="text-white">2021</p>
                     <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
                       <li>Four engine options</li>
@@ -57,12 +60,15 @@ const Home = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide className="">
                 <div className="w-[500px] h-[350px] popular flex ml-[30px]">
                   <div className="info">
                     <img src={chevDark} alt="chevrolet-logo" />
                     <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-                    <img src={path} alt="path" />
+                    <div className="text-center">
+                      <img src={seat} alt="seat" />
+                      <p className="text-[#F5FAFF] font-[700]">4</p>
+                    </div>
                     <p className="text-white">2021</p>
                     <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
                       <li>Four engine options</li>
@@ -82,12 +88,15 @@ const Home = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide className="">
                 <div className="w-[500px] h-[350px] popular flex ml-[30px]">
                   <div className="info">
                     <img src={chevDark} alt="chevrolet-logo" />
                     <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-                    <img src={path} alt="path" />
+                    <div className="text-center">
+                      <img src={seat} alt="seat" />
+                      <p className="text-[#F5FAFF] font-[700]">4</p>
+                    </div>
                     <p className="text-white">2021</p>
                     <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
                       <li>Four engine options</li>
@@ -121,12 +130,15 @@ const Home = () => {
               slidesPerView={1.7}
               className="styles.home-swiper"
             >
-              <SwiperSlide>
+              <SwiperSlide className="">
                 <div className="w-[500px] h-[350px] popular flex ml-[30px]">
                   <div className="info">
                     <img src={chevDark} alt="chevrolet-logo" />
                     <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-                    <img src={path} alt="path" />
+                    <div className="text-center">
+                      <img src={seat} alt="seat" />
+                      <p className="text-[#F5FAFF] font-[700]">4</p>
+                    </div>
                     <p className="text-white">2021</p>
                     <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
                       <li>Four engine options</li>
@@ -146,12 +158,15 @@ const Home = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide className="">
                 <div className="w-[500px] h-[350px] popular flex ml-[30px]">
                   <div className="info">
                     <img src={chevDark} alt="chevrolet-logo" />
                     <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-                    <img src={path} alt="path" />
+                    <div className="text-center">
+                      <img src={seat} alt="seat" />
+                      <p className="text-[#F5FAFF] font-[700]">4</p>
+                    </div>
                     <p className="text-white">2021</p>
                     <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
                       <li>Four engine options</li>
@@ -171,12 +186,15 @@ const Home = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide className="">
                 <div className="w-[500px] h-[350px] popular flex ml-[30px]">
                   <div className="info">
                     <img src={chevDark} alt="chevrolet-logo" />
                     <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-                    <img src={path} alt="path" />
+                    <div className="text-center">
+                      <img src={seat} alt="seat" />
+                      <p className="text-[#F5FAFF] font-[700]">4</p>
+                    </div>
                     <p className="text-white">2021</p>
                     <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
                       <li>Four engine options</li>

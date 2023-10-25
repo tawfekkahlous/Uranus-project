@@ -22,8 +22,8 @@ const RentConfirm = () => {
   return (
     <div className=" comfirm pt-[50px] pb-[80px]">
       <div className="container mx-auto px-[40px]">
-        <div className="flex justify-between ">
-          <div className="ml-[40px]  w-[40%]">
+        <div className="flex justify-between items-center flex-col lg:flex-row  gap-y-[40px]">
+          <div className="  w-[90%] lg:w-[40%] ">
             <div className="flex items-center gap-[30px]">
               <p className="text-[#353B42] font-[600]">From</p>
               <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -76,8 +76,8 @@ const RentConfirm = () => {
             </div>
           </div>
 
-          <div className="">
-            <div className="side-car w-[500px] h-[400px] m-[0] p-[0] relative ">
+          <div className=" w-[80%] lg:w-[40%]">
+            <div className="side-car  w-[600px] lg:w-[500px] h-[400px] m-[0] p-[0] relative ">
               <Swiper
                 style={{
                   "--swiper-navigation-color": "blue",
@@ -90,8 +90,8 @@ const RentConfirm = () => {
                 modules={[FreeMode, Navigation, Thumbs]}
                 className="mySwiper2"
               >
-                <SwiperSlide>
-                  <img src={chevrolet} />
+                <SwiperSlide className="">
+                  <img src={chevrolet}  />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img src={frontSide} />
@@ -137,7 +137,7 @@ const RentConfirm = () => {
         </div>
 
         <Link to="rent-proccess-payment">
-          <button className="bg-[#E42E35] text-[#F5FAFF] py-[8px] px-[80px] rounded-[15px] font-[700] ml-[30px] mt-[25px]">
+          <button className="bg-[#E42E35] text-[#F5FAFF] py-[8px] w-[200px] rounded-[12px] font-[700] ml-[30px] mt-[25px]">
             Confirm
           </button>
         </Link>

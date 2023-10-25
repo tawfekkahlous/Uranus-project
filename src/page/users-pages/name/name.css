@@ -1,29 +1,40 @@
-.name-page {
-  height: calc(100vh - 100px);
-}
-
- .name-page .box {
+.name-page .box {
   flex-shrink: 0;
   border-radius: 21px;
   background: var(--N2, #f5faff);
   box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.25);
 }
- .name-page .box .note {
-  color: var(--N1, #353B42);
+.name-page .box .note {
+  color: var(--N1, #353b42);
 
-font-family: Quicksand;
-font-size: 15px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
- }
+  font-family: Quicksand;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 
- .name-page .box .label {
-    color: var(--N1, #353B42);
-text-align: center;
-font-family: Quicksand;
-font-size: 25px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.name-page .box .label {
+  color: var(--N1, #353b42);
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.PhoneInput {
+  display: flex;
+  align-items: center;
+  width: 450px !important;
+}
+
+.PhoneInputInput {
+  height: 41px !important;
+  flex: 1 !important;
+  min-width: 0 !important;
+  border: 3px solid rgba(62, 63, 67, 0.6);
+  width: 390px !important;
+  border-radius: 12px !important;
 }

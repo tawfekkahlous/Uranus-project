@@ -1,23 +1,23 @@
 import "./carInfo.css";
 import chevroletLogo from "../../../assets/chevLogo.svg";
-import chevrolet from "../../../assets/Chevrolet-Camaro-398x206 1.svg"
-import frontSide from "../../../assets/2019-chevrolet-camaro-1lt-coupe-front-view.svg"
-import backSide from "../../../assets/2019-chevrolet-camaro-1lt-coupe-rear-view.svg"
+import chevrolet from "../../../assets/Chevrolet-Camaro-398x206 1.svg";
+import frontSide from "../../../assets/2019-chevrolet-camaro-1lt-coupe-front-view.svg";
+import backSide from "../../../assets/2019-chevrolet-camaro-1lt-coupe-rear-view.svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-import angularSide from "../../../assets/2019-chevrolet-camaro-1lt-coupe-angular-rear.svg"
+import angularSide from "../../../assets/2019-chevrolet-camaro-1lt-coupe-angular-rear.svg";
 import star from "../../../assets/star.svg";
 
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
-import { useState } from "react";
+// import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import seat from "../../../assets/dark-seat.svg";
 const CarInfo = () => {
-    //  const [thumbsSwiper, setThumbsSwiper] = useState("");
+  //  const [thumbsSwiper, setThumbsSwiper] = useState("");
   return (
     <div className="  py-[50px]">
       <div className="container mx-auto px-[40px]">
@@ -34,7 +34,10 @@ const CarInfo = () => {
               <p className="text-[#353B42] text-[15px] font-[700]">Camaro</p>
               <p className="text-[#353B42] text-[15px] font-[700]">2022</p>
             </div>
-            <p className="text-[#353B42] font-[600] mb-[20px]">20,000KM</p>
+            <div className="flex gap-[10px] items-center">
+              <img src={seat} alt="seat" className="w-[20px] self-start"/>
+              <p className="text-[#353B42] font-[600] mb-[20px]"> 4 Seats</p>
+            </div>
             <div className="flex items-center mb-[10px]">
               <p className="text-[#353B42] font-[600]">5500</p>
               <img src={star} alt="star" className="w-[15px]" />
@@ -138,7 +141,7 @@ const CarInfo = () => {
           </div>
         </div>
         <Link to="rent-proccess-confirmation">
-          <button className="bg-[#E42E35] text-[#F5FAFF] py-[8px] px-[80px] rounded-[15px] font-[700] ml-[30px] relative top-[-30px]">
+          <button className="bg-[#E42E35] text-[#F5FAFF] py-[8px] w-[200px] rounded-[12px] font-[700] ml-[30px] relative top-[-30px]">
             Rent
           </button>
         </Link>

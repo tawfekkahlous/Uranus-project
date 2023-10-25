@@ -14,8 +14,8 @@ import { IconButton, InputBase, Paper } from "@mui/material";
 import note from "../../../assets/note.svg";
 const Automotives = () => {
   const header = ["Car", "Brand", "year", "Distance", "Color"];
-  const [isOpen, setIsOpen] = useState(false);
   const [isAdd, setIsAdd] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const togglePopup = () => {
     setIsOpen(!isOpen);
