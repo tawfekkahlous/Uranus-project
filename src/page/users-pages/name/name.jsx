@@ -14,7 +14,26 @@ import PhoneInput from "react-phone-number-input";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string("Enter your name").required("Name is required"),
-  phoneNumber: Yup.string().required("Phone number is required"),
+  // phoneNumber: Yup.string().required("Phone number is required"),
+  // phoneNumber: Yup.string()
+  //   .required("Phone number is required")
+  //   .matches(
+  //     /^[0-9]{10}$/,
+  //     "Phone number is not valid - it should be exactly 10 digits"
+  //   ),
+
+  phoneNumber: Yup.string()
+    .required("Phone number is required")
+    .matches(
+      /^[0-9]{12}$/,
+      "Phone number is not valid - it should be exactly 10 digits"
+    )
+    .transform((value) => value.replace(/\D/g, ""))
+    .test(
+      "length",
+      "Phone number is not valid - it should be exactly 10 digits",
+      (value) => value && value.length === 12
+    ),
 });
 
 const Name = () => {
