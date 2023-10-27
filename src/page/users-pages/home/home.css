@@ -29,8 +29,8 @@
     #353b42
   );
   display: flex;
-  width: 191px;
   height: 100%;
+  width: 191px;
   padding: 17px 6px;
   flex-direction: column;
   align-items: center;
@@ -64,8 +64,8 @@
   font-weight: 700;
 }
 .home .swiper-slide {
-  flex-shrink: 0;
-  width: 45% !important;
+  /* flex-shrink: 0; */
+  /* width: 45% !important; */
   position: relative;
   transition-property: transform;
   display: block;

@@ -4,12 +4,15 @@ import React from "react";
 import chevDark from "../../../assets/chev-dark.svg"
 import seat from "../../../assets/seats.svg"
 import chevrolet from "../../../assets/Chevrolet-Camaro-398x206 1.svg"
+import { useNavigate } from "react-router-dom";
 // import { Link } from "react-router-dom";
 const Cars = () => {
   const [age, setAge] = React.useState("");
    const [price, setPrice] = React.useState("");
     const [brand, setBrand] = React.useState("");
 
+
+    const navigate=useNavigate()
 
   const handleChangeAge = (event) => {
     setAge(event.target.value);
@@ -32,8 +35,8 @@ const Cars = () => {
         <p className="text-[#353B42] font-[700] text-[20px] mb-[30px]">
           Our cars
         </p>
-        <div className="flex  gap-[40px]">
-          <Box sx={{ minWidth: 140, borderRadius: "20px" }}>
+        <div className="flex  gap-[20px] lg:gap-[40px]">
+          <Box sx={{ minWidth: 80, borderRadius: "20px", width: "140px" }}>
             <FormControl fullWidth>
               <InputLabel id="demo-simple-select-label">Age</InputLabel>
               <Select
@@ -49,7 +52,7 @@ const Cars = () => {
               </Select>
             </FormControl>
           </Box>
-          <Box sx={{ minWidth: 140 }}>
+          <Box sx={{ minWidth: 80, borderRadius: "20px", width: "140px" }}>
             <FormControl fullWidth>
               <InputLabel id="demo-simple-select-label">Price</InputLabel>
               <Select
@@ -65,7 +68,7 @@ const Cars = () => {
               </Select>
             </FormControl>
           </Box>
-          <Box sx={{ minWidth: 140 }}>
+          <Box sx={{ minWidth: 80, borderRadius: "20px", width: "140px" }}>
             <FormControl fullWidth>
               <InputLabel id="demo-simple-select-label">Brand</InputLabel>
               <Select
@@ -85,7 +88,10 @@ const Cars = () => {
         <hr className="mt-[30px] h-[2px] mb-[50px]" />
 
         <div className="grid grid-cols-12 gap-[20px] ">
-          <div className="lg:w-[450px] lg:h-[350px] xl:w-[500px] popular flex ml-[30px]  col-span-12  lg:col-span-6">
+          <div
+            onClick={() => navigate("/car-info")}
+            className="lg:w-[450px] lg:h-[350px] xl:w-[500px] popular flex ml-[30px]  col-span-12  lg:col-span-6 cursor-pointer"
+          >
             <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
               <img src={chevDark} alt="chevrolet-logo" />
               <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>

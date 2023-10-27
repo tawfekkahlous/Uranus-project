@@ -31,7 +31,7 @@ border-radius: 8px;
 }
  .popular {
   background: var(--N2, #f5faff);
-  box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.10);
+  /* box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.10); */
   background: var(--N2, #f5faff);
   border-radius: 24px;
   margin-bottom: 25px;

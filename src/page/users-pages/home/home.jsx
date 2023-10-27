@@ -7,11 +7,12 @@ import chevrolet from "../../../assets/Chevrolet-Camaro-398x206 1.svg";
 import chevDark from "../../../assets/chev-dark.svg";
 import "./home.css";
 import seat from "../../../assets/seats.svg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="home py-[50px]">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-[40px]">
         <div className="  mb-[40px]">
           <h1 className=" text-[#E42E35] font-[700] text-[25px] font-[Quicksand] mb-[10px] ">
             Hi Guest
@@ -29,11 +30,12 @@ const Home = () => {
               navigation={true}
               modules={[Navigation]}
               // spaceBetween={}
-              slidesPerView={2.5}
-              className="styles.home-swiper"
+              // slidesPerView={2.5}
+              className="home-swiper"
             >
-              <SwiperSlide className="">
-                <div className="w-[500px] h-[350px] popular flex ml-[30px]">
+              <SwiperSlide className=" !w-[100%] md:!w-[70%] lg:!w-[45%] ">
+              <Link to="/car-info">
+                <div className=" popular flex ml-[30px]">
                   <div className="info">
                     <img src={chevDark} alt="chevrolet-logo" />
                     <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
@@ -47,7 +49,36 @@ const Home = () => {
                       <li>The 1LE track package is available on all trims</li>
                     </ul>
                   </div>
-                  <div className=" ">
+                  <div className="flex flex-col justify-evenly ">
+                    <img
+                      src={chevrolet}
+                      alt="chevrolet"
+                      className="w-[300px] relative left-[-50px] z-[1] mt-[60px]"
+                    />
+                    <div className="mt-[55px] flex justify-around">
+                      <button className="price">550/daily</button>
+                      <button className="type">Camaro</button>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              </SwiperSlide>
+              <SwiperSlide className=" !w-[100%] md:!w-[70%] lg:!w-[45%] ">
+                <div className=" popular flex ml-[30px]">
+                  <div className="info">
+                    <img src={chevDark} alt="chevrolet-logo" />
+                    <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
+                    <div className="text-center">
+                      <img src={seat} alt="seat" />
+                      <p className="text-[#F5FAFF] font-[700]">4</p>
+                    </div>
+                    <p className="text-white">2021</p>
+                    <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
+                      <li>Four engine options</li>
+                      <li>The 1LE track package is available on all trims</li>
+                    </ul>
+                  </div>
+                  <div className="flex flex-col justify-evenly ">
                     <img
                       src={chevrolet}
                       alt="chevrolet"
@@ -60,8 +91,8 @@ const Home = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className="">
-                <div className="w-[500px] h-[350px] popular flex ml-[30px]">
+              <SwiperSlide className=" !w-[100%] md:!w-[70%] lg:!w-[45%] ">
+                <div className=" popular flex ml-[30px]">
                   <div className="info">
                     <img src={chevDark} alt="chevrolet-logo" />
                     <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
@@ -75,35 +106,7 @@ const Home = () => {
                       <li>The 1LE track package is available on all trims</li>
                     </ul>
                   </div>
-                  <div className=" ">
-                    <img
-                      src={chevrolet}
-                      alt="chevrolet"
-                      className="w-[300px] relative left-[-50px] z-[1] mt-[60px]"
-                    />
-                    <div className="mt-[55px] flex justify-around">
-                      <button className="price">550/daily</button>
-                      <button className="type">Camaro</button>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="">
-                <div className="w-[500px] h-[350px] popular flex ml-[30px]">
-                  <div className="info">
-                    <img src={chevDark} alt="chevrolet-logo" />
-                    <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
-                    <div className="text-center">
-                      <img src={seat} alt="seat" />
-                      <p className="text-[#F5FAFF] font-[700]">4</p>
-                    </div>
-                    <p className="text-white">2021</p>
-                    <ul className="list-disc text-[#F5FAFF] text-[12px] w-[74%]">
-                      <li>Four engine options</li>
-                      <li>The 1LE track package is available on all trims</li>
-                    </ul>
-                  </div>
-                  <div className=" ">
+                  <div className="flex flex-col justify-evenly ">
                     <img
                       src={chevrolet}
                       alt="chevrolet"
@@ -127,11 +130,11 @@ const Home = () => {
               cssMode={true}
               navigation={true}
               modules={[Navigation]}
-              slidesPerView={1.7}
-              className="styles.home-swiper"
+              // slidesPerView={1.7}
+              className="home-swiper"
             >
-              <SwiperSlide className="">
-                <div className="w-[500px] h-[350px] popular flex ml-[30px]">
+              <SwiperSlide className=" !w-[100%] md:!w-[70%] lg:!w-[45%] ">
+                <div className=" popular flex ml-[30px]">
                   <div className="info">
                     <img src={chevDark} alt="chevrolet-logo" />
                     <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
@@ -145,7 +148,7 @@ const Home = () => {
                       <li>The 1LE track package is available on all trims</li>
                     </ul>
                   </div>
-                  <div className=" ">
+                  <div className="flex flex-col justify-evenly ">
                     <img
                       src={chevrolet}
                       alt="chevrolet"
@@ -158,8 +161,8 @@ const Home = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className="">
-                <div className="w-[500px] h-[350px] popular flex ml-[30px]">
+              <SwiperSlide className=" !w-[100%] md:!w-[70%] lg:!w-[45%] ">
+                <div className=" popular flex ml-[30px]">
                   <div className="info">
                     <img src={chevDark} alt="chevrolet-logo" />
                     <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
@@ -173,7 +176,7 @@ const Home = () => {
                       <li>The 1LE track package is available on all trims</li>
                     </ul>
                   </div>
-                  <div className=" ">
+                  <div className="flex flex-col justify-evenly ">
                     <img
                       src={chevrolet}
                       alt="chevrolet"
@@ -186,8 +189,8 @@ const Home = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className="">
-                <div className="w-[500px] h-[350px] popular flex ml-[30px]">
+              <SwiperSlide className=" !w-[100%] md:!w-[70%] lg:!w-[45%] ">
+                <div className=" popular flex ml-[30px]">
                   <div className="info">
                     <img src={chevDark} alt="chevrolet-logo" />
                     <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>
@@ -201,7 +204,7 @@ const Home = () => {
                       <li>The 1LE track package is available on all trims</li>
                     </ul>
                   </div>
-                  <div className=" ">
+                  <div className="flex flex-col justify-evenly ">
                     <img
                       src={chevrolet}
                       alt="chevrolet"

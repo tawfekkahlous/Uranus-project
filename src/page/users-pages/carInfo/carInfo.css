@@ -30,13 +30,14 @@
   width: 100%;
   border-radius: 24px;
   background: var(--N2, #f5faff);
-  /* box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.15);
 }
 
 .side-car .mySwiper {
   height: 25%;
   box-sizing: border-box;
   padding: 10px 0;
+  
 }
 
 .side-car .mySwiper .swiper-slide {
@@ -45,7 +46,7 @@
   opacity: 0.9 ;
   border-radius: 24px;
   background: var(--N2, #f5faff);
-  /* box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0px 4px 42px 7px rgba(0, 0, 0, 0.10);
 }
 
 .side-car .mySwiper .swiper-slide-thumb-active {

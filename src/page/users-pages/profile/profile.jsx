@@ -16,7 +16,7 @@ const Profile = () => {
             Your Account
           </h2>
 
-          <div className=" flex  flex-col gap-y-[50px] justify-between sm:flex-row sm:justify-between ">
+          <div className=" flex  flex-col gap-y-[50px] justify-between sm:flex-row sm:justify-between items-center sm:items-start ">
             <div className="flex flex-col gap-y-[30px] sm:w-[45%] lg:w-[40%] w-[90%]  ">
               <div className="points  p-[20px] w-[100%] ">
                 <div className="flex gap-[15px] items-center justify-center mb-[15px]">

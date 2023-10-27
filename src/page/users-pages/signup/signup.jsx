@@ -34,18 +34,20 @@ const Signup = () => {
   //     };
   return (
     <div className="signup-page flex justify-center items-center gap-x-[32px]">
-      <div className="uranus py-[40px] ">
+      <div className="uranus py-[40px] hidden  lg:flex flex-col justify-between md:w-[400px] md:h-[409px] ">
         <div className="">
           <img src={welcomeLogo} alt="welcome-logo" className="logo " />
         </div>
         <div className=" text-center mt-[80px]">
-          <button onClick={handleClick} className="login">
-            Login
-          </button>
+          <Link to="/login">
+            <button onClick={handleClick} className="login">
+              Login
+            </button>
+          </Link>
         </div>
       </div>
 
-      <div className="form w-[400px] py-[40px] h-[415px] flex flex-col ">
+      <div className="form  w-[330px] md:w-[400px] py-[60px]  h-[409px] flex flex-col ">
         <h2> Singup</h2>
         <div className=" text-center grow ">
           <Formik
@@ -56,7 +58,7 @@ const Signup = () => {
               confirmPassword: "",
             }}
             validationSchema={validationSchema}
-            onSubmit={(values, { resetForm} , setSubmitting ) => {
+            onSubmit={(values, { resetForm }, setSubmitting) => {
               console.log({ values });
               resetForm();
               setSubmitting(false);
@@ -201,27 +203,27 @@ const Signup = () => {
                   </div>
                 </div>
                 <Link to="name">
-                <Button
-                  variant="contained"
-                  type="submit"
-                  color="error"
-                  sx={{
-                    borderRadius: "12px",
-                    width: "250px",
-                    boxShadow: "0px 4px 31px 0px rgba(0, 0, 0, 0.25)",
-                    background: "var(--P1, #E42E35)",
-                    color: "#F5FAFF",
-                    fontSize: "15px",
-                    fonrWeight: "700",
-                    fontFamily: "Quicksand",
-                    padding: "10px",
-                    // marginTop: "83px",
-                    lineHeight: "normal",
-                  }}
-                  disabled={!formik.isValid || !formik.dirty}
-                >
-                  Signup
-                </Button>
+                  <Button
+                    variant="contained"
+                    type="submit"
+                    color="error"
+                    sx={{
+                      borderRadius: "12px",
+                      width: "250px",
+                      boxShadow: "0px 4px 31px 0px rgba(0, 0, 0, 0.25)",
+                      background: "var(--P1, #E42E35)",
+                      color: "#F5FAFF",
+                      fontSize: "15px",
+                      fonrWeight: "700",
+                      fontFamily: "Quicksand",
+                      padding: "10px",
+                      // marginTop: "83px",
+                      lineHeight: "normal",
+                    }}
+                    disabled={!formik.isValid || !formik.dirty}
+                  >
+                    Signup
+                  </Button>
                 </Link>
               </Form>
             )}

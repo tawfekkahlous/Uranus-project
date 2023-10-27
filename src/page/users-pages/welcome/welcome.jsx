@@ -10,8 +10,8 @@ import { Link } from "react-router-dom";
 import "./welcome.css";
 const Welcome = () => {
   return (
-    <div className="welcome flex justify-center items-center gap-[32px]">
-      <div className="uranus py-[60px]">
+    <div className="welcome flex justify-center flex-col-reverse md:flex-row items-center gap-[32px] p-[30px]">
+      <div className="uranus py-[60px] w-[350px] sm:w-[400px]">
         <div className="">
           <img src={welcomeLogo} alt="welcome-logo" className="logo " />
         </div>
@@ -24,7 +24,7 @@ const Welcome = () => {
           </Link>
         </div>
       </div>
-      <div className="w-[420px] left  h-[455px] ">
+      <div className="w-[370px] sm:w-[420px]  left  h-[455px] ">
         <Swiper
           spaceBetween={0}
           centeredSlides={true}

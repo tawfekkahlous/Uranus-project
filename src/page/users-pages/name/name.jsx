@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./name.css";
 import { Formik, Field, Form } from "formik";
 import { Button, TextField } from "@mui/material";
@@ -6,42 +7,19 @@ import nameIcon from "../../../assets/name-icon.svg";
 // import { Link } from "react-router-dom";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
-import PropTypes from "prop-types";
 // const validationSchema = yup.object({
 //   name: yup.string("Enter your name").required("Name is required"),
 //   phoneNumber: yup.string().required("Phone number is required"),
 // });
 
-
 const validationSchema = Yup.object().shape({
   name: Yup.string("Enter your name").required("Name is required"),
   phoneNumber: Yup.string().required("Phone number is required"),
-  // Add your phone number validation logic here
 });
 
-
-
-const PhoneInputField = ({ field, form }) => {
-  const handleOnChange = (value) => {
-    form.setFieldValue(field.name, value);
-  };
-
-  return (
-    <PhoneInput
-      country={"us"}
-      value={field.value}
-      enableAreaCodes={true}
-      onChange={handleOnChange}
-    />
-  );
-};
-
-
-
 const Name = () => {
+  const [value, setValue] = useState("");
 
-
-  
   return (
     <div className="name-page flex items-center justify-center py-[50px]">
       <div className=" box text-center w-[500px] py-[40px] ">
@@ -64,11 +42,14 @@ const Name = () => {
               }}
               validationSchema={validationSchema}
               onSubmit={(values, { setSubmitting }) => {
-                console.log(values);
+                console.log({
+                  name: values.name,
+                  phoneNumber: value,
+                });
                 setSubmitting(false);
               }}
             >
-              {({ errors, touched, dirty, isValid }) => (
+              {({ errors, touched, dirty, isValid, setFieldValue }) => (
                 <Form>
                   <div>
                     <Field
@@ -101,33 +82,18 @@ const Name = () => {
                     <p className="label mt-[30px] mb-[30px]">
                       Enter your phone number
                     </p>
-                    {/* <Field
-                    name="phoneNumber"
-                    as={PhoneInput}
-                    variant="outlined"
-                    helperText={touched.phoneNumber ? errors.phoneNumber : ""}
-                    error={touched.phoneNumber && Boolean(errors.phoneNumber)}
-                    className="w-[566px] h-[58px] mt-[48px]"
-                    sx={{
-                      width: "400px",
-                      "& .MuiOutlinedInput-root": {
-                        "& fieldset": {
-                          border: "3px solid rgba(62, 63, 67, 0.60)",
-                          borderRadius: "12px",
-                        },
-                        "&:hover fieldset": {
-                          border: "3px solid rgba(62, 63, 67, 0.60)",
-                          borderRadius: "12px",
-                        },
-                        "&.Mui-focused fieldset": {
-                          border: "3px solid rgba(62, 63, 67, 0.60)",
-                          borderRadius: "12px",
-                        },
-                      },
-                    }}
-                  /> */}
-
-                    <Field name="phoneNumber" component={PhoneInputField} />
+                    <PhoneInput
+                      name="phoneNumber"
+                      value={value}
+                      onChange={(value) => {
+                        setValue(value);
+                        setFieldValue("phoneNumber", value);
+                      }}
+                      placeholder="Enter phone number"
+                      defaultCountry="SY"
+                      error={touched.phoneNumber && Boolean(errors.phoneNumber)}
+                      helperText={touched.phoneNumber ? errors.phoneNumber : ""}
+                    />
                   </div>
                   {/* <Link to="validate"> */}
                   <div className=" mt-[70px] ">

@@ -25,6 +25,9 @@ import MyCar from "./page/users-pages/myCar/myCar";
 import RentConfirm from "./page/users-pages/rent-confirm/rentConfirm";
 import RentPayment from "./page/users-pages/rent-payment/rentPayment";
 import Profile from "./page/users-pages/profile/profile";
+import RentLocation from "./page/users-pages/rent-location/rentLocation";
+import Request from "./page/users-pages/request/request";
+import Report from "./page/users-pages/report/report";
 
 function App() {
   const [isLogged, setIsLogged] = useState(false);
@@ -51,20 +54,30 @@ function App() {
         <Route path="/" element={<LayoutUser />}>
           <Route path="/" element={<Welcome />} />
           <Route path="login" element={<LoginUser />} />
-          <Route path="login/home" element={<Home />} />
-          <Route path="login/cars" element={<Cars />} />
-          <Route path="login/profile" element={<Profile />} />
-          <Route path="login/profile/my-car" element={<MyCar />} />
-          <Route path="login/car-info" element={<CarInfo />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="home" element={<Home />} />
+          <Route path="cars" element={<Cars />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="profile/my-car" element={<MyCar />} />
+          <Route path="car-info" element={<CarInfo />} />
           <Route
-            path="login/car-info/rent-proccess-confirmation"
+            path="car-info/rent-proccess-confirmation"
             element={<RentConfirm />}
           />
           <Route
-            path="login/car-info/rent-proccess-confirmation/rent-proccess-payment"
+            path="car-info/rent-proccess-confirmation/rent-proccess-payment"
             element={<RentPayment />}
           />
-          <Route path="signup" element={<Signup />} />
+          <Route
+            path="car-info/rent-proccess-confirmation/rent-proccess-payment/rent-proccess-location"
+            element={<RentLocation />}
+          />
+          <Route
+            path="request"
+            element={<Request />}
+          />
+          <Route path="request/report" element={<Report />} />
+
           <Route path="signup/name" element={<Name />} />
           <Route path="signup/name/validate" element={<Validate />} />
           <Route

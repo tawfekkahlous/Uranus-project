@@ -6,23 +6,23 @@ import { NavLink } from "react-router-dom"
 const Header = () => {
   return (
     <div className=" header ">
-      <div className=" container mx-auto  flex items-center justify-between h-[50px] px-[20px]">
+      <div className=" container mx-auto  flex flex-col items-center justify-around gap-[20px] md:flex-row md:items-center  md:justify-between md:h-[50px] p-[20px] md:px-[20px]">
         <div className="flex items-center   ">
           <img
             src={headerLogo}
             alt="header-logo"
-            className="w-[80px] h-[38px]  mr-[13px] "
+            className="w-[120px] md:w-[80px] h-[38px]   mr-[13px] "
           />
-          <p className="title"> URANUS RENT A CAR L.L.C</p>
+          <p className="title font-[Quicksand]"> URANUS RENT A CAR L.L.C</p>
         </div>
         <ul className="flex gap-x-[60px]  ">
-          <NavLink to="login/home">
+          <NavLink to="home">
             <li> Home </li>
           </NavLink>
-          <NavLink to="login/cars">
+          <NavLink to="cars">
             <li> Cars </li>
           </NavLink>
-          <NavLink to="login/profile">
+          <NavLink to="profile">
             <li> Profile </li>
           </NavLink>
         </ul>

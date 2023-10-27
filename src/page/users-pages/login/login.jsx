@@ -16,19 +16,19 @@ const validationSchema = Yup.object().shape({
 
 const LoginUser = () => {
   return (
-    <div className="login-page flex justify-center items-center gap-[32px]">
-      <div className="uranus py-[60px] ">
+    <div className="login-page flex justify-center items-center gap-[32px] p-[30px] flex-col md:flex-row">
+      <div className="uranus py-[60px]  hidden  lg:flex flex-col justify-between md:w-[400px] md:h-[409px] ">
         <div className="">
           <img src={welcomeLogo} alt="welcome-logo" className="logo " />
         </div>
         <div className=" form-login text-center mt-[80px]">
-          <Link to="singup">
+          <Link to="/signup">
             <button className="signup  mt-[15px]">Signup</button>
           </Link>
         </div>
       </div>
 
-      <div className="form w-[400px] py-[60px]  h-[409px] flex flex-col">
+      <div className="form w-[330px] md:w-[400px] py-[60px]  h-[409px] flex flex-col ">
         <h2> Login</h2>
         <div className=" text-center grow">
           <Formik
@@ -63,7 +63,7 @@ const LoginUser = () => {
                       }}
                       sx={{
                         borderRadius: "8px",
-                        width: "80%",
+                        width: "90%",
                         marginTop: "50px",
                         "& .MuiOutlinedInput-root": {
                           "& fieldset": {
@@ -108,7 +108,7 @@ const LoginUser = () => {
                         borderRadius: "8px",
                         height: "100%",
                         marginTop: "20px",
-                        width: "80%",
+                        width: "90%",
                         "& .MuiOutlinedInput-root": {
                           "& fieldset": {
                             border: "2px solid rgba(62, 63, 67, 0.60)",
@@ -140,7 +140,7 @@ const LoginUser = () => {
                     color="error"
                     sx={{
                       borderRadius: "12px",
-                      width: "250px",
+                      width: "60%",
                       boxShadow: "0px 4px 31px 0px rgba(0, 0, 0, 0.25)",
                       background: "var(--P1, #E42E35)",
                       color: "#F5FAFF",

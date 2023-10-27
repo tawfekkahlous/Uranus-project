@@ -2,7 +2,10 @@ import chevDark from "../../../assets/chev-dark.svg";
 import seat from "../../../assets/seats.svg"
 import chevrolet from "../../../assets/Chevrolet-Camaro-398x206 1.svg";
 import "./myCar.css"
+import { useNavigate } from "react-router-dom";
 const MyCar = () => {
+
+  const navigate=useNavigate()
   return (
     <div className=" myCars py-[50px]">
       <div className="container mx-auto px-[40px]">
@@ -12,7 +15,7 @@ const MyCar = () => {
         <p className="font-[700] text-[#353B42]">Current</p>
         <hr className="mt-[15px] h-[2px] mb-[50px]" />
         <div className="grid grid-cols-12 gap-[20px] ">
-          <div className="lg:w-[450px] lg:h-[350px] xl:w-[500px] popular flex ml-[30px]  col-span-12  lg:col-span-6">
+          <div onClick={() => navigate("/car-info")} className="lg:w-[450px] lg:h-[350px] xl:w-[500px] popular flex ml-[30px]  col-span-12  lg:col-span-6 cursor-pointer">
             <div className="info lg:w-[150px] xl:w-[191px] md:w-[200px] w-[150px]  ">
               <img src={chevDark} alt="chevrolet-logo" />
               <div className="bg-[#F5FAFF] rounded-[50%] w-[25px] h-[25px]"></div>

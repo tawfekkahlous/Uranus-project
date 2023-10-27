@@ -4,7 +4,6 @@ import star from "../../../assets/green-star.svg";
 import active from "../../../assets/active-step.svg";
 import current from "../../../assets/current-step.svg";
 import next from "../../../assets/next-step.svg";
-import circle from "../../../assets/active-step-circle.svg";
 import dots from "../../../assets/dots.svg";
 import chevrolet from "../../../assets/Chevrolet-Camaro-398x206 1.svg";
 import frontSide from "../../../assets/2019-chevrolet-camaro-1lt-coupe-front-view.svg";
@@ -24,10 +23,13 @@ import { ErrorMessage, Field, Formik, Form } from "formik";
 import * as yup from "yup";
 import right from "../../../assets/right.svg";
 import Redstar from "../../../assets/red-star.svg";
-import wrong from "../../../assets/false.svg";
+// import wrong from "../../../assets/false.svg";
+import { Link, useNavigate } from "react-router-dom";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 const RentPayment = () => {
+
+  const navigate=useNavigate()
   const validationSchema = yup.object().shape({
     email: yup.string().email().required(),
     cardNumber: yup
@@ -114,29 +116,32 @@ const RentPayment = () => {
               <p className="text-[#353B42] font-[600]">50 days</p>
               <p className="text-[#27C11A] font-[600]">10,000 A.E.D</p>
             </div>
-            <div className="flex justify-between items-center mt-[40px] ">
-              <div className="flex items-center ">
-                <img src={active} alt="active" />
-                <img
-                  src={circle}
-                  alt="circle"
-                  className="relative left-[-19px] w-[25px]"
-                />
-                <p className="relative left-[-14px] text-[#353B42] font-[600]">
+            <div className="flex justify-between items-center mt-[40px]  ">
+              <div className="flex items-center  gap-[5px] ">
+                <div className="w-[25px] h-[25px] border-[2px] border-[#E42E35] rounded-[50%] flex justify-center items-center ">
+                  <img src={active} alt="active" />
+                </div>
+                <p className=" text-[#353B42] font-[600] text-[14px]">
                   Requested
                 </p>
               </div>
               <div className="w-[40px] h-[2px] bg-[#E42E35]"></div>
 
               <div className="flex gap-[5px] items-center ">
-                <img src={current} alt="current" />
-                <p className="text-[#353B42] font-[600]">Payment</p>
+                <img
+                  src={current}
+                  alt="current"
+                  className="w-[25px] h-[25px]"
+                />
+                <p className="text-[#353B42] font-[600] text-[14px]">Payment</p>
               </div>
               <img src={dots} alt="dots" />
 
               <div className="flex gap-[5px]">
-                <img src={next} alt="next" />
-                <p className="text-[#353B42] font-[600]">Delivered</p>
+                <img src={next} alt="next" className="w-[25px] h-[25px]" />
+                <p className="text-[#353B42] font-[600] text-[14px]">
+                  Delivered
+                </p>
               </div>
             </div>
           </div>
@@ -200,9 +205,11 @@ const RentPayment = () => {
           </div>
         </div>
         <div className="mt-[50px] lg:mt-[15px] ">
-          <button className="bg-[#F5FAFF] cash text-[#353B42] py-[8px] w-[200px]  font-[700] ml-[30px] ">
-            Cash on Delivery
-          </button>
+          <Link to="rent-proccess-location">
+            <button className="bg-[#F5FAFF] cash text-[#353B42] py-[8px] w-[200px]  font-[700] ml-[30px] ">
+              Cash on Delivery
+            </button>
+          </Link>
           <button
             className="bg-[#E42E35] text-[#F5FAFF] py-[8px] w-[200px]  font-[700] ml-[30px] "
             onClick={togglePopup}
@@ -764,7 +771,7 @@ const RentPayment = () => {
             </div>
           </div>
         )} */}
-        
+
         {isDone && (
           <div
             style={{
@@ -795,7 +802,10 @@ const RentPayment = () => {
               </p>
               <button
                 className="w-[100%] bg-[#E42E35] text-[#F5FAFF] font-[700] py-[10px] text-[14px]"
-                onClick={handledone}
+                onClick={() => {
+                  handledone();
+                  navigate("/request");
+                }}
               >
                 Done!
               </button>
