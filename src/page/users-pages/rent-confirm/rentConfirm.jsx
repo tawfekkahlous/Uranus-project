@@ -24,7 +24,7 @@ const RentConfirm = () => {
       <div className="container mx-auto px-[40px]">
         <div className="flex justify-between items-center flex-col lg:flex-row  gap-y-[40px]">
           <div className="  w-[90%] lg:w-[40%] ">
-            <div className="flex items-center gap-[30px]">
+            <div className="flex items-center gap-[30px] ">
               <p className="text-[#353B42] font-[600]">From</p>
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DemoContainer components={["DatePicker"]}>
@@ -39,16 +39,16 @@ const RentConfirm = () => {
               </p>
             </div>
             <div>
-              <div className="flex items-center gap-[30px]">
+              <div className="flex items-center gap-[30px] ">
                 <p className="text-[#353B42] font-[600] w-[39px]">To</p>
-                <LocalizationProvider dateAdapter={AdapterDayjs}>
+                <LocalizationProvider dateAdapter={AdapterDayjs} sx={{}}>
                   <DemoContainer components={["DatePicker"]}>
                     <DatePicker label="" />
                   </DemoContainer>
                 </LocalizationProvider>
               </div>
             </div>
-            <div className="flex items-center mt-[20px] gap-x-[30px]">
+            <div className="flex items-center mt-[20px] gap-x-[30px] ">
               <p className="text-[#353B42] font-[600] ">Send a Driver</p>
               <Switch {...label} defaultChecked />
             </div>
@@ -76,8 +76,8 @@ const RentConfirm = () => {
             </div>
           </div>
 
-          <div className=" w-[80%] lg:w-[40%]">
-            <div className="side-car  w-[600px] lg:w-[500px] h-[400px] m-[0] p-[0] relative ">
+          <div className="">
+            <div className="side-car car w-[400px] h-[350px] md:w-[500px] md:h-[400px] m-[0] p-[0] relative">
               <Swiper
                 style={{
                   "--swiper-navigation-color": "blue",
@@ -91,7 +91,7 @@ const RentConfirm = () => {
                 className="mySwiper2"
               >
                 <SwiperSlide className="">
-                  <img src={chevrolet}  />
+                  <img src={chevrolet} />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img src={frontSide} />
@@ -128,7 +128,7 @@ const RentConfirm = () => {
               </Swiper>
             </div>
 
-            <div className="flex justify-between items-center">
+            <div className="flex justify-center md:justify-between items-center">
               <p className="underline font-[500] text-[#353B42]">
                 View All Images
               </p>
@@ -137,9 +137,11 @@ const RentConfirm = () => {
         </div>
 
         <Link to="rent-proccess-payment">
-          <button className="bg-[#E42E35] text-[#F5FAFF] py-[8px] w-[200px] rounded-[12px] font-[700] ml-[30px] mt-[25px]">
-            Confirm
-          </button>
+          <div className="flex justify-center items-center lg:justify-start">
+            <button className="bg-[#E42E35] text-[#F5FAFF] py-[8px] px-[60px] rounded-[12px] font-[700] ml-[30px] mt-[25px]">
+              Confirm
+            </button>
+          </div>
         </Link>
       </div>
     </div>

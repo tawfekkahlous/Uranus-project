@@ -8,8 +8,8 @@
 
 .payment.swiper-slide img {
   display: block;
-  width: 80% !important;
-  height: 80% !important;
+ width: 80% !important;
+  height: 65% !important;
   object-fit: cover;
 }
 

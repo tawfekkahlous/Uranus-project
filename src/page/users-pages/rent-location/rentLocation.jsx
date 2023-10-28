@@ -20,7 +20,7 @@ const rentLocation = () => {
     <div className=" payment pt-[50px] pb-[80px]">
       <div className="container mx-auto px-[40px]">
         <div className="flex justify-between items-center flex-col lg:flex-row  gap-y-[40px]">
-          <div className="w-[40%]">
+          <div className="w-[90%]  lg:w-[45%] self-start">
             <div className="flex gap-[30px]">
               <div className="flex items-center gap-[5px]">
                 <img src={chevLogo} alt="" className="w-[40px]" />
@@ -73,7 +73,7 @@ const rentLocation = () => {
             </div>
           </div>
           <div className=" ">
-            <div className="side-car w-[600px] lg:w-[500px] h-[400px] m-[0] p-[0] relative ">
+            <div className="side-car  w-[400px] h-[350px] md:w-[500px] md:h-[400px] m-[0] p-[0] relative ">
               <Swiper
                 style={{
                   "--swiper-navigation-color": "blue",

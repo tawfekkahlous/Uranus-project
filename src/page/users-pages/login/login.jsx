@@ -133,7 +133,7 @@ const LoginUser = () => {
                   </div>
                 </div>
 
-                <Link to="home">
+                <Link to="/home">
                   <Button
                     variant="contained"
                     type="submit"

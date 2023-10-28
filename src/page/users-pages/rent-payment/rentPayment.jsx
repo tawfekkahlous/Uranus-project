@@ -146,7 +146,7 @@ const RentPayment = () => {
             </div>
           </div>
           <div className=" ">
-            <div className="side-car w-[600px] lg:w-[500px] h-[400px] m-[0] p-[0] relative ">
+            <div className="side-car w-[400px] h-[350px] md:w-[500px] md:h-[400px] m-[0] p-[0] relative ">
               <Swiper
                 style={{
                   "--swiper-navigation-color": "blue",
@@ -204,7 +204,7 @@ const RentPayment = () => {
             </div>
           </div>
         </div>
-        <div className="mt-[50px] lg:mt-[15px] ">
+        <div className="mt-[50px] lg:mt-[15px] flex flex-col md:flex-row justify-evenly items-center lg:justify-start gap-[30px] ">
           <Link to="rent-proccess-location">
             <button className="bg-[#F5FAFF] cash text-[#353B42] py-[8px] w-[200px]  font-[700] ml-[30px] ">
               Cash on Delivery

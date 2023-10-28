@@ -87,8 +87,8 @@ const ValidatePictures = () => {
     setActiveStep(0);
   };
   return (
-    <div className="validationPic flex items-center justify-center gap-x-[32px] ">
-      <div className="leftBox py-[40px]">
+    <div className="validationPic flex items-center flex-col md:flex-row p-[30px] gap-[30px] justify-center gap-x-[32px] ">
+      <div className="leftBox py-[40px] w-[310px] lg:w-[380px]">
         <img src={welcomeLogo} alt="welcome-logo" className="logo" />
         <p>
           Please upload
@@ -99,7 +99,7 @@ const ValidatePictures = () => {
         </p>
       </div>
 
-      <div className="rightBox flex justify-center py-[40px] ">
+      <div className="rightBox flex justify-center py-[40px] w-[310px]  lg:w-[380px] ">
         <Box
           sx={{
             width: "70%",

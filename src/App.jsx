@@ -76,7 +76,7 @@ function App() {
             path="request"
             element={<Request />}
           />
-          <Route path="request/report" element={<Report />} />
+          <Route path="report" element={<Report />} />
 
           <Route path="signup/name" element={<Name />} />
           <Route path="signup/name/validate" element={<Validate />} />

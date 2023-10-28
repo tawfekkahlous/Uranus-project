@@ -27,7 +27,7 @@
 .PhoneInput {
   display: flex;
   align-items: center;
-  width: 450px !important;
+  width: 90% !important;
 }
 
 .PhoneInputInput {

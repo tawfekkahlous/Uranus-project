@@ -32,8 +32,8 @@ const currencies = [
 
 const Validate = () => {
   return (
-    <div className="validatePage flex items-center justify-center gap-x-[32px]">
-      <div className="leftBox  py-[40px] ">
+    <div className="validatePage flex items-center flex-col md:flex-row  justify-center gap-x-[32px] p-[30px] gap-[30px]">
+      <div className="leftBox  py-[40px] w-[310px] md:w-[400px] ">
         <img src={welcomeLogo} alt="welcome-logo" className="welcome" />
         <div className="mt-[50px]">
           <img
@@ -45,7 +45,7 @@ const Validate = () => {
         </div>
       </div>
 
-      <div className="rightBox py-[40px]">
+      <div className="rightBox py-[40px] w-[310px] md:w-[400px]">
         <h3>One more step...</h3>
         <div>
           <p>please choose what type of residency you have</p>
@@ -113,28 +113,27 @@ const Validate = () => {
                   </ErrorMessage> */}
                 </div>
                 <Link to="validatePictures">
-                <div className="text-center mt-[15px]">
-                  <Button
-                    variant="contained"
-                    type="submit"
-                    color="error"
-                    disabled={values.resident ? false : true}
-                    sx={{
-                      borderRadius: "12px",
-                      marginTop: "50px",
-                      width: "250px",
-                      boxShadow: "0px 4px 31px 0px rgba(0, 0, 0, 0.25)",
-                      background: "var(--P1, #E42E35)",
-                      color: "#F5FAFF",
-                      fontSize: "15px",
-                      fonrWeight: "700",
-                      fontFamily: "Quicksand",
-                    
-                    }}
-                  >
-                    Continue
-                  </Button>
-                </div>
+                  <div className="text-center mt-[15px]">
+                    <Button
+                      variant="contained"
+                      type="submit"
+                      color="error"
+                      disabled={values.resident ? false : true}
+                      sx={{
+                        borderRadius: "12px",
+                        marginTop: "50px",
+                        width: "250px",
+                        boxShadow: "0px 4px 31px 0px rgba(0, 0, 0, 0.25)",
+                        background: "var(--P1, #E42E35)",
+                        color: "#F5FAFF",
+                        fontSize: "15px",
+                        fonrWeight: "700",
+                        fontFamily: "Quicksand",
+                      }}
+                    >
+                      Continue
+                    </Button>
+                  </div>
                 </Link>
               </Form>
             )}

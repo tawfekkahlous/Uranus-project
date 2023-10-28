@@ -8,12 +8,10 @@ import locationDark from "../../assets/location-dark.svg";
 import "./footer.css";
 import logo from "../../assets/header-logo.svg";
 const Footer = () => {
-  return  (
- 
-   
+  return (
     <div className="footer  border-t-[1px] border-t-[#353B42] ">
       <div className=" container mx-auto  grid grid-cols-12 gap-[30px] p-[25px] md:py-[40px] md:px-[0px] ">
-        <div className="col-span-6 md:col-span-3 md:text-center">
+        <div className="  col-span-12  col-start-4 col-end-11 sm:col-span-6 md:col-span-3 md:text-center">
           <img
             src={logo}
             alt="logo"
@@ -29,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="col-span-6  md:col-span-5">
+        <div className=" col-span-12 sm:col-span-6 col-start-4 col-end-11 md:col-span-5">
           <p className="text-[#E42E35] text-[17px] font-[700] mb-[15px]">
             URANUS RENT A CAR L.L.C
           </p>
@@ -53,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="col-span-6 md:col-span-2">
+        <div className="col-span-12 sm:col-span-6 col-start-4 col-end-11 md:col-span-2">
           <p className="text-[#E42E35] text-[17px] font-[700] mb-[15px]">
             Pages
           </p>
@@ -69,7 +67,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="col-span-6 md:col-span-2">
+        <div className="col-span-12 sm:col-span-6 col-start-4 col-end-11 md:col-span-2">
           <p className="text-[#E42E35] text-[17px] font-[700] mb-[15px]">
             Information
           </p>

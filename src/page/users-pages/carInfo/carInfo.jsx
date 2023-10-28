@@ -3,7 +3,7 @@ import chevroletLogo from "../../../assets/chevLogo.svg";
 import chevrolet from "../../../assets/Chevrolet-Camaro-398x206 1.svg";
 import frontSide from "../../../assets/2019-chevrolet-camaro-1lt-coupe-front-view.svg";
 import backSide from "../../../assets/2019-chevrolet-camaro-1lt-coupe-rear-view.svg";
-
+import manual from "../../../assets/manual.svg"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -24,7 +24,7 @@ const CarInfo = () => {
         <h2 className=" text-[#E42E35] font-[700] text-[25px] font-[Quicksand] mb-[10px] ">
           My Cars
         </h2>
-        <div className="flex justify-between ">
+        <div className="flex justify-between  flex-col lg:flex-row gap-[30px]">
           <div className="ml-[30px] mt-[30px]">
             <div className="flex items-center gap-2 mb-[10px]">
               <img src={chevroletLogo} alt="" className="w-[30px]" />
@@ -35,8 +35,12 @@ const CarInfo = () => {
               <p className="text-[#353B42] text-[15px] font-[700]">2022</p>
             </div>
             <div className="flex gap-[10px] items-center">
-              <img src={seat} alt="seat" className="w-[20px] self-start"/>
+              <img src={seat} alt="seat" className="w-[20px] self-start" />
               <p className="text-[#353B42] font-[600] mb-[20px]"> 4 Seats</p>
+            </div>
+            <div className="flex gap-[10px] items-center">
+              <img src={manual} alt="seat" className="w-[20px] self-start" />
+              <p className="text-[#353B42] font-[600] mb-[20px]"> Manual</p>
             </div>
             <div className="flex items-center mb-[10px]">
               <p className="text-[#353B42] font-[600]">5500</p>
@@ -77,7 +81,7 @@ const CarInfo = () => {
           </div>
 
           <div className="">
-            <div className="side-car w-[500px] h-[400px] m-[0] p-[0] relative ">
+            <div className="side-car w-[400px] h-[350px] md:w-[500px] md:h-[400px] m-[0] p-[0] relative ">
               <Swiper
                 style={{
                   "--swiper-navigation-color": "blue",
@@ -91,7 +95,7 @@ const CarInfo = () => {
                 className="mySwiper2"
               >
                 <SwiperSlide>
-                  <img src={chevrolet} />
+                  <img src={chevrolet} className="" />
                 </SwiperSlide>
                 <SwiperSlide>
                   <img src={frontSide} />
@@ -140,11 +144,13 @@ const CarInfo = () => {
             </div>
           </div>
         </div>
-        <Link to="rent-proccess-confirmation">
-          <button className="bg-[#E42E35] text-[#F5FAFF] py-[8px] w-[200px] rounded-[12px] font-[700] ml-[30px] relative top-[-30px]">
-            Rent
-          </button>
-        </Link>
+        <div className="flex justify-center items-center lg:justify-start">
+          <Link to="rent-proccess-confirmation">
+            <button className="bg-[#E42E35] text-[#F5FAFF] py-[8px] w-[200px] rounded-[12px] font-[700] ml-[30px] mt-[30px] lg:relative lg:top-[-30px]">
+              Rent
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

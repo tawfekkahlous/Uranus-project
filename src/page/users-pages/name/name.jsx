@@ -4,7 +4,7 @@ import { Formik, Field, Form } from "formik";
 import { Button, TextField } from "@mui/material";
 import * as Yup from "yup";
 import nameIcon from "../../../assets/name-icon.svg";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 // const validationSchema = yup.object({
@@ -41,7 +41,7 @@ const Name = () => {
 
   return (
     <div className="name-page flex items-center justify-center py-[50px]">
-      <div className=" box text-center w-[500px] py-[40px] ">
+      <div className=" box text-center  w-[330px] md:w-[450px] py-[60px]   flex flex-col ">
         <div className=" flex justify-center items-center gap-[6px]">
           <img
             src={nameIcon}
@@ -79,7 +79,7 @@ const Name = () => {
                       error={touched.name && Boolean(errors.name)}
                       className="w-[566px] h-[58px] mt-[48px]"
                       sx={{
-                        width: "400px",
+                        width: "80%",
                         "& .MuiOutlinedInput-root": {
                           "& fieldset": {
                             border: "3px solid rgba(62, 63, 67, 0.60)",
@@ -114,7 +114,7 @@ const Name = () => {
                       helperText={touched.phoneNumber ? errors.phoneNumber : ""}
                     />
                   </div>
-                  {/* <Link to="validate"> */}
+                  <Link to="validate">
                   <div className=" mt-[70px] ">
                     <Button
                       variant="contained"
@@ -137,7 +137,7 @@ const Name = () => {
                       Continue
                     </Button>
                   </div>
-                  {/* </Link> */}
+                  </Link>
                 </Form>
               )}
             </Formik>

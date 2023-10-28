@@ -68,7 +68,7 @@ const Request = () => {
             </p>
           </div>
           <div className=" ">
-            <div className="side-car w-[600px] lg:w-[500px] h-[365px] m-[0] p-[0] relative ">
+            <div className="side-car  w-[400px] h-[350px] md:w-[500px] md:h-[400px] m-[0] p-[0] relative ">
               <Swiper
                 style={{
                   "--swiper-navigation-color": "blue",
@@ -131,12 +131,14 @@ const Request = () => {
           {/* <button className=" bg-[#E42E35] text-[#F5FAFF] font-[700]">
             S.O.S
           </button> */}
-          <Link to="report">
+          <Link to="/report">
             <button className=" bg-[#E42E35] text-[#F5FAFF] font-[700]">
               Report a problem
             </button>
           </Link>
+          <Link to="/car-info">
           <button className="renew text-[#F5FAFF] font-[700] ">Renew</button>
+          </Link>
         </div>
       </div>
     </div>
