@@ -98,7 +98,7 @@ console.log(isOpenImage);
             <Formik
               // validationSchema={validationSchema}
               initialValues={{
-                name: "test",
+                name: "kia",
                 brand: "honda",
                 distance: "100",
                 year: "2015",

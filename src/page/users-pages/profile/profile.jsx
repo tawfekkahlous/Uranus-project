@@ -91,7 +91,7 @@ const Profile = () => {
                 </p>
 
                 <div className="">
-                  <div className="flex justify-between items-center mx-[60px] ">
+                  <div className="flex justify-between items-center mx-[15px] ">
                     <p className="font-[700] text-[14px] text-[#353B42]">
                       {" "}
                       {"2500"}{" "}
@@ -395,7 +395,7 @@ const Profile = () => {
                           )}
                         </ErrorMessage>
                       </div>
-                  
+
                       <PhoneInput
                         name="phoneNumber"
                         value={value}
@@ -404,7 +404,7 @@ const Profile = () => {
                           formik.setFieldValue("phoneNumber", value);
                         }}
                         placeholder="Enter phone number"
-                        defaultCountry="SY"
+                        defaultCountry="AE"
                         error={
                           formik.touched.phoneNumber &&
                           Boolean(formik.errors.phoneNumber)
@@ -515,7 +515,7 @@ const Profile = () => {
                           sx={{
                             background: "var(--N2, #F5FAFF)",
                             backdropFilter: "blur(2px)",
-                            boxShadow: "0px 4px 33px 0px rgba(0, 0, 0, 0.25)",
+                            // boxShadow: "0px 4px 33px 0px rgba(0, 0, 0, 0.25)",
                             borderRadius: "12px",
                             width: "90%",
                             margin: "auto",
@@ -524,16 +524,16 @@ const Profile = () => {
                             marginBottom: "25px",
                             "& .MuiOutlinedInput-root": {
                               "& fieldset": {
-                                border: "2px solid #E42E35",
-                                borderRadius: "6px",
+                                border: "2px solid rgba(62, 63, 67, 0.60)",
+                                borderRadius: "12px",
                               },
                               "&:hover fieldset": {
-                                border: "2px solid #E42E35",
-                                borderRadius: "6px",
+                                border: "2px solid rgba(62, 63, 67, 0.60)",
+                                borderRadius: "12px",
                               },
                               "&.Mui-focused fieldset": {
-                                border: "2px solid #E42E35",
-                                borderRadius: "6px",
+                                 border: "2px solid rgba(62, 63, 67, 0.60)",
+                                borderRadius: "12px",
                               },
                             },
                           }}

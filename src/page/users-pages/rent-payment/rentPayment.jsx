@@ -23,12 +23,17 @@ import { ErrorMessage, Field, Formik, Form } from "formik";
 import * as yup from "yup";
 import right from "../../../assets/right.svg";
 import Redstar from "../../../assets/red-star.svg";
+import manual from "../../../assets/manual.svg"
 // import wrong from "../../../assets/false.svg";
 import { Link, useNavigate } from "react-router-dom";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 const RentPayment = () => {
 
+   const [isUrgent, setIsUrgent] = useState(false);
+   const handleSwitchChange = (event) => {
+     setIsUrgent(event.target.checked);
+   };
   const navigate=useNavigate()
   const validationSchema = yup.object().shape({
     email: yup.string().email().required(),
@@ -83,14 +88,20 @@ const RentPayment = () => {
                 <img src={chevLogo} alt="" className="w-[40px]" />
                 <p className="text-[#353B42] font-[600]">Chevrolet</p>
               </div>
-              <div className="flex items-center self-end gap-[5px]">
+              <div className="flex items-center  gap-[5px]">
                 <img src={seat} alt="seat" className="w-[20px] " />
                 <p className="text-[#353B42] font-[600] "> 4 Seats</p>
               </div>
             </div>
-            <div className="flex gap-[8px]">
-              <p className="text-[#353B42] font-[600]">Camaro</p>
-              <p className="text-[#353B42] font-[600]">2022</p>
+            <div className="flex gap-[40px]">
+              <div className="flex gap-[8px]">
+                <p className="text-[#353B42] font-[600]">Camaro</p>
+                <p className="text-[#353B42] font-[600]">2022</p>
+              </div>
+              <div className="flex items-center  gap-[5px]">
+                <img src={manual} alt="manual" className="w-[18px] " />
+                <p className="text-[#353B42] font-[600] "> Manual</p>
+              </div>
             </div>
 
             <div className="flex gap-[30px] items-center mt-[20px] mb-[15px]">
@@ -125,7 +136,7 @@ const RentPayment = () => {
                   Requested
                 </p>
               </div>
-              <div className="w-[40px] h-[2px] bg-[#E42E35]"></div>
+              <div className="w-[40px] h-[2px] bg-[#E42E35] hidden sm:block"></div>
 
               <div className="flex gap-[5px] items-center ">
                 <img
@@ -135,7 +146,7 @@ const RentPayment = () => {
                 />
                 <p className="text-[#353B42] font-[600] text-[14px]">Payment</p>
               </div>
-              <img src={dots} alt="dots" />
+              <img src={dots} alt="dots" className="hidden sm:block" />
 
               <div className="flex gap-[5px]">
                 <img src={next} alt="next" className="w-[25px] h-[25px]" />
@@ -204,7 +215,7 @@ const RentPayment = () => {
             </div>
           </div>
         </div>
-        <div className="mt-[50px] lg:mt-[15px] flex flex-col md:flex-row justify-evenly items-center lg:justify-start gap-[30px] ">
+        <div className="mt-[50px] lg:mt-[15px] flex flex-col md:flex-row justify-evenly items-center lg:justify-start gap-[10px] ">
           <Link to="rent-proccess-location">
             <button className="bg-[#F5FAFF] cash text-[#353B42] py-[8px] w-[200px]  font-[700] ml-[30px] ">
               Cash on Delivery
@@ -557,7 +568,11 @@ const RentPayment = () => {
               </div>
               <div className="flex justify-between items-center">
                 <p className="text-[#3D3C3C] font-[700]">Redeem from points</p>
-                <Switch {...label} />
+                <Switch
+                  {...label}
+                  checked={isUrgent}
+                  onChange={handleSwitchChange}
+                />
               </div>
 
               <div className="text-center grow ">
@@ -684,10 +699,10 @@ const RentPayment = () => {
                           lineHeight: "normal",
                         }}
                         disabled={!formik.isValid || !formik.dirty}
-                        onClick={() => {
-                          handledone();
-                          handleCheckout();
-                        }}
+                        // onClick={() => {
+                        //   handledone();
+                        //   handleCheckout();
+                        // }}
                       >
                         Checkout
                       </Button>

@@ -6,6 +6,7 @@ import current from "../../../assets/current-step.svg";
 import next from "../../../assets/next-step.svg";
 import dots from "../../../assets/dots.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
+import manual from "../../../assets/manual.svg"
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
@@ -26,14 +27,20 @@ const rentLocation = () => {
                 <img src={chevLogo} alt="" className="w-[40px]" />
                 <p className="text-[#353B42] font-[600]">Chevrolet</p>
               </div>
-              <div className="flex items-center self-end gap-[5px]">
+              <div className="flex items-center  gap-[5px]">
                 <img src={seat} alt="seat" className="w-[20px] " />
                 <p className="text-[#353B42] font-[600] "> 4 Seats</p>
               </div>
             </div>
-            <div className="flex gap-[8px]">
-              <p className="text-[#353B42] font-[600]">Camaro</p>
-              <p className="text-[#353B42] font-[600]">2022</p>
+            <div className="flex gap-[40px]">
+              <div className="flex gap-[8px]">
+                <p className="text-[#353B42] font-[600]">Camaro</p>
+                <p className="text-[#353B42] font-[600]">2022</p>
+              </div>
+              <div className="flex items-center  gap-[5px]">
+                <img src={manual} alt="manual" className="w-[18px] " />
+                <p className="text-[#353B42] font-[600] "> Manual</p>
+              </div>
             </div>
             <img
               src={location}
@@ -50,7 +57,7 @@ const rentLocation = () => {
                   Requested
                 </p>
               </div>
-              <div className="w-[40px] h-[2px] bg-[#E42E35]"></div>
+              <div className="w-[40px] h-[2px] bg-[#E42E35]  hidden sm:block"></div>
 
               <div className="flex gap-[5px] items-center ">
                 <div className="w-[25px] h-[25px] border-[2px] border-[#E42E35] rounded-[50%] flex justify-center items-center ">
@@ -58,7 +65,7 @@ const rentLocation = () => {
                 </div>
                 <p className="text-[#353B42] font-[600] text-[14px]">Payment</p>
               </div>
-              <img src={dots} alt="dots" />
+              <img src={dots} alt="dots" className=" hidden sm:block" />
 
               <div className="flex gap-[5px]">
                 <img

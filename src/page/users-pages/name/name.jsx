@@ -41,7 +41,7 @@ const Name = () => {
 
   return (
     <div className="name-page flex items-center justify-center py-[50px]">
-      <div className=" box text-center  w-[330px] md:w-[450px] py-[60px]   flex flex-col ">
+      <div className=" box text-center  w-[330px] md:w-[450px] py-[40px]   flex flex-col ">
         <div className=" flex justify-center items-center gap-[6px]">
           <img
             src={nameIcon}
@@ -52,7 +52,7 @@ const Name = () => {
         </div>
 
         <div className=" mt-[40px]">
-          <p className="label">What’s your name?</p>
+          <p className="label">More info</p>
           <div className="mt-[30px]">
             <Formik
               initialValues={{
@@ -74,33 +74,33 @@ const Name = () => {
                     <Field
                       name="name"
                       as={TextField}
+                      label="Name"
                       variant="outlined"
                       helperText={touched.name ? errors.name : ""}
                       error={touched.name && Boolean(errors.name)}
                       className="w-[566px] h-[58px] mt-[48px]"
                       sx={{
                         width: "80%",
+                        marginBottom:"15px",
+                        marginTop:"40px",
                         "& .MuiOutlinedInput-root": {
                           "& fieldset": {
-                            border: "3px solid rgba(62, 63, 67, 0.60)",
+                            border: "2px solid rgba(62, 63, 67, 0.60)",
                             borderRadius: "12px",
                           },
                           "&:hover fieldset": {
-                            border: "3px solid rgba(62, 63, 67, 0.60)",
+                            border: "2px solid rgba(62, 63, 67, 0.60)",
                             borderRadius: "12px",
                           },
                           "&.Mui-focused fieldset": {
-                            border: "3px solid rgba(62, 63, 67, 0.60)",
+                            border: "2px solid rgba(62, 63, 67, 0.60)",
                             borderRadius: "12px",
                           },
                         },
                       }}
                     />
                   </div>
-                  <div>
-                    <p className="label mt-[30px] mb-[30px]">
-                      Enter your phone number
-                    </p>
+                  <div className="m-auto text-center">
                     <PhoneInput
                       name="phoneNumber"
                       value={value}
@@ -109,12 +109,12 @@ const Name = () => {
                         setFieldValue("phoneNumber", value);
                       }}
                       placeholder="Enter phone number"
-                      defaultCountry="SY"
+                      defaultCountry="AE"
                       error={touched.phoneNumber && Boolean(errors.phoneNumber)}
                       helperText={touched.phoneNumber ? errors.phoneNumber : ""}
                     />
                   </div>
-                  <Link to="validate">
+                  {/* <Link to="validate"> */}
                   <div className=" mt-[70px] ">
                     <Button
                       variant="contained"
@@ -137,7 +137,7 @@ const Name = () => {
                       Continue
                     </Button>
                   </div>
-                  </Link>
+                  {/* </Link> */}
                 </Form>
               )}
             </Formik>

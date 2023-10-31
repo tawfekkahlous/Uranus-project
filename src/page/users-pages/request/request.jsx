@@ -13,6 +13,7 @@ import angularSide from "../../../assets/2019-chevrolet-camaro-1lt-coupe-angular
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import "./request.css";
 import { Link } from "react-router-dom";
+import manual from "../../../assets/manual.svg"
 const Request = () => {
   return (
     <div className="request py-[50px]">
@@ -27,14 +28,20 @@ const Request = () => {
                 <img src={chevLogo} alt="" className="w-[40px]" />
                 <p className="text-[#353B42] font-[600]">Chevrolet</p>
               </div>
-              <div className="flex items-center self-end gap-[5px]">
+              <div className="flex items-center  gap-[5px]">
                 <img src={seat} alt="seat" className="w-[20px] " />
                 <p className="text-[#353B42] font-[600] "> 4 Seats</p>
               </div>
             </div>
-            <div className="flex gap-[8px]">
-              <p className="text-[#353B42] font-[600]">Camaro</p>
-              <p className="text-[#353B42] font-[600]">2022</p>
+            <div className="flex gap-[40px]">
+              <div className="flex gap-[8px]">
+                <p className="text-[#353B42] font-[600]">Camaro</p>
+                <p className="text-[#353B42] font-[600]">2022</p>
+              </div>
+              <div className="flex items-center  gap-[5px]">
+                <img src={manual} alt="manual" className="w-[18px] " />
+                <p className="text-[#353B42] font-[600] "> Manual</p>
+              </div>
             </div>
 
             <div className="flex gap-[30px] items-center mt-[20px] mb-[15px]">
@@ -137,7 +144,7 @@ const Request = () => {
             </button>
           </Link>
           <Link to="/car-info">
-          <button className="renew text-[#F5FAFF] font-[700] ">Renew</button>
+            <button className="renew text-[#F5FAFF] font-[700] ">Renew</button>
           </Link>
         </div>
       </div>

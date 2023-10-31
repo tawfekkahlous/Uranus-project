@@ -16,14 +16,14 @@ const Report = () => {
   //  };
  const [radioValue, setRadioValue] = useState("car");
  const [isUrgent, setIsUrgent] = useState(false);
+ const handleSwitchChange = (event) => {
+   setIsUrgent(event.target.checked);
+ };
 
    const handleRadioChange = (event) => {
      setRadioValue(event.target.value);
    };
 
-   const handleSwitchChange = (event) => {
-     setIsUrgent(event.target.checked);
-   };
   const handleButtonClick = () => {
     event.preventDefault();
     console.log(inputRef.current.value);
